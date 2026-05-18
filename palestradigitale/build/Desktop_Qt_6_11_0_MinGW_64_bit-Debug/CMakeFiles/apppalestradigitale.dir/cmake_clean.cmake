@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  ".qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp"
+  ".qt/rcc/qrc_qmake_palestradigitale.cpp"
+  ".rcc/qmlcache/apppalestradigitale_Main_qml.cpp"
+  ".rcc/qmlcache/apppalestradigitale_Main_qml.cpp.aotstats"
+  ".rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp"
+  "CMakeFiles/apppalestradigitale_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/apppalestradigitale_autogen.dir/ParseCache.txt"
+  "apppalestradigitale_autogen"
+  "CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj"
+  "CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj.d"
+  "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj"
+  "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj.d"
+  "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj"
+  "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj.d"
+  "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj"
+  "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj.d"
+  "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj"
+  "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj.d"
+  "CMakeFiles/apppalestradigitale.dir/main.cpp.obj"
+  "CMakeFiles/apppalestradigitale.dir/main.cpp.obj.d"
+  "apppalestradigitale.exe"
+  "apppalestradigitale.exe.manifest"
+  "apppalestradigitale.pdb"
+  "apppalestradigitale_autogen/mocs_compilation.cpp"
+  "apppalestradigitale_autogen/timestamp"
+  "apppalestradigitale_qmltyperegistrations.cpp"
+  "libapppalestradigitale.dll.a"
+  "meta_types/apppalestradigitale_json_file_list.txt"
+  "meta_types/apppalestradigitale_json_file_list.txt.timestamp"
+  "meta_types/qt6apppalestradigitale_metatypes.json"
+  "meta_types/qt6apppalestradigitale_metatypes.json.gen"
+  "palestradigitale/apppalestradigitale.qmltypes"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/apppalestradigitale.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
