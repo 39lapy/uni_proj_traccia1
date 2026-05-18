@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/palestra_digitale/">
+    <file alias="Main.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestra_digitale/Main.qml</file>
+  </qresource>
+</RCC>
+

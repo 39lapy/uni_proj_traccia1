@@ -1,0 +1,6 @@
+module palestra_digitale
+typeinfo apppalestra_digitale.qmltypes
+prefer :/qt/qml/palestra_digitale/
+Main 254.0 Main.qml
+depends QtQuick
+
