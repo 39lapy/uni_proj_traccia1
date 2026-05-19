@@ -1,0 +1,14 @@
+-rootPath
+C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale
+-cmake-output
+-output-file
+C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Release/.qt/qml_imports/apppalestradigitale_conf.cmake
+-importPath
+C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Release
+-importPath
+C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Release/palestradigitale
+-importPath
+C:/Qt/6.11.0/mingw_64/qml
+-qrcFiles
+C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Release/.qt/rcc/qmake_palestradigitale.qrc
+C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Release/.qt/rcc/apppalestradigitale_raw_qml_0.qrc

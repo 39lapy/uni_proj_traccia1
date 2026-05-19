@@ -1,0 +1,50 @@
+#ifndef DBMANAGER_H
+#define DBMANAGER_H
+
+#include <QObject>
+#include <QSqlDatabase>
+#include <QFile>
+#include <QTextStream>
+#include <QDateTime>
+
+class DbManager : public QObject {
+    Q_OBJECT
+public:
+    explicit DbManager(QObject *parent = nullptr);
+
+    bool init();
+    void seedTestData();
+    void closeLog();
+
+    Q_INVOKABLE bool login(const QString &email, const QString &password);
+    Q_INVOKABLE bool registerUser(const QString &firstName, const QString &lastName,
+                                  const QString &email, const QString &password,
+                                  const QString &userType);
+    Q_INVOKABLE void logout();
+
+    Q_INVOKABLE QString currentUserType() const;
+    Q_INVOKABLE int currentUserId() const;
+    Q_INVOKABLE QString currentUserName() const;
+
+    Q_INVOKABLE QVariantList getWorkoutPrograms();
+    Q_INVOKABLE QVariantList getWorkoutProgramsByDifficulty(const QString &difficulty);
+    Q_INVOKABLE QVariantList getWorkoutProgramsByGoal(const QString &goal);
+
+    Q_INVOKABLE QVariantList getSessions(int userId);
+    Q_INVOKABLE bool logSession(int userId, int programId, const QString &dateTime, int durationMinutes);
+
+    Q_INVOKABLE QVariantList getNutritionPlans();
+    Q_INVOKABLE QVariantList getNutritionTips(int userId);
+
+    Q_INVOKABLE bool addFeedback(int userId, int programId, int planId, int rating, const QString &comment);
+
+private:
+    int m_currentUserId = -1;
+    QString m_currentUserType;
+    QString m_currentUserName;
+    QFile m_logFile;
+
+    void logDbChange(const QString &operation, const QString &table, const QString &details);
+};
+
+#endif // DBMANAGER_H

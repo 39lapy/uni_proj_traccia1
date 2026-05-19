@@ -1,0 +1,10 @@
+[2026-05-19 11:36:32] INIT -> database | connection opened
+[2026-05-19 11:36:32] INIT -> database | connection opened
+[2026-05-19 11:36:43] LOGIN -> users | email: mario@test.com | type: client
+[2026-05-19 11:37:11] INSERT -> feedback | user_id: 1 | rating: 1
+[2026-05-19 11:40:39] INIT -> database | connection opened
+[2026-05-19 11:40:39] INIT -> database | connection opened
+[2026-05-19 11:40:50] LOGIN -> users | email: admin | type: administrator
+[2026-05-19 11:40:55] LOGOUT -> users | user_id: 3
+[2026-05-19 11:41:08] LOGIN -> users | email: mario@test.com | type: client
+[2026-05-19 11:41:16] INSERT -> sessions | user_id: 1 | program_id: 1 | duration: 40

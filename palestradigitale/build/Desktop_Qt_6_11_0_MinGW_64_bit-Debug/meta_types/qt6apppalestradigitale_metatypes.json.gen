@@ -1,0 +1,219 @@
+[
+    {
+        "classes": [
+            {
+                "className": "DbManager",
+                "lineNumber": 10,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "email",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 19,
+                        "name": "login",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "firstName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "lastName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "email",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "userType",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 20,
+                        "name": "registerUser",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 23,
+                        "name": "logout",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "isConst": true,
+                        "lineNumber": 25,
+                        "name": "currentUserType",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "isConst": true,
+                        "lineNumber": 26,
+                        "name": "currentUserId",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "isConst": true,
+                        "lineNumber": 27,
+                        "name": "currentUserName",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "lineNumber": 29,
+                        "name": "getWorkoutPrograms",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "difficulty",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 7,
+                        "lineNumber": 30,
+                        "name": "getWorkoutProgramsByDifficulty",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "goal",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 8,
+                        "lineNumber": 31,
+                        "name": "getWorkoutProgramsByGoal",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "userId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 9,
+                        "lineNumber": 33,
+                        "name": "getSessions",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "userId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "programId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "dateTime",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "durationMinutes",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 10,
+                        "lineNumber": 34,
+                        "name": "logSession",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "lineNumber": 36,
+                        "name": "getNutritionPlans",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "userId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 12,
+                        "lineNumber": 37,
+                        "name": "getNutritionTips",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "userId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "programId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "planId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "rating",
+                                "type": "int"
+                            },
+                            {
+                                "name": "comment",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 13,
+                        "lineNumber": 39,
+                        "name": "addFeedback",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "DbManager",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "dbmanager.h",
+        "outputRevision": 69
+    }
+]
