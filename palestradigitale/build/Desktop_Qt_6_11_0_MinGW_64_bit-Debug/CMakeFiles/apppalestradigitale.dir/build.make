@@ -83,6 +83,7 @@ apppalestradigitale_qmltyperegistrations.cpp: C:/Qt/6.11.0/mingw_64/metatypes/qt
 apppalestradigitale_qmltyperegistrations.cpp: C:/Qt/6.11.0/mingw_64/metatypes/qt6quick_metatypes.json
 apppalestradigitale_qmltyperegistrations.cpp: C:/Qt/6.11.0/mingw_64/metatypes/qt6gui_metatypes.json
 apppalestradigitale_qmltyperegistrations.cpp: C:/Qt/6.11.0/mingw_64/metatypes/qt6opengl_metatypes.json
+apppalestradigitale_qmltyperegistrations.cpp: C:/Qt/6.11.0/mingw_64/metatypes/qt6sql_metatypes.json
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Automatic QML type registration for target apppalestradigitale"
 	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmltyperegistrar.exe "--generate-qmltypes=C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/apppalestradigitale.qmltypes" --import-name=palestradigitale --major-version=254 --minor-version=254 "@C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/qmltypes/apppalestradigitale_foreign_types.txt" -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/apppalestradigitale_qmltyperegistrations.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/meta_types/qt6apppalestradigitale_metatypes.json"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/qmltypes"
@@ -101,6 +102,7 @@ palestradigitale/apppalestradigitale.qmltypes: apppalestradigitale_qmltyperegist
 .rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp: .rcc/qmlcache/apppalestradigitale_qml_loader_file_list.rsp
 .rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp: .qt/rcc/qmake_palestradigitale.qrc
 .rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Generating .rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp"
 	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --resource-name qmlcache_apppalestradigitale -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp" "@C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml_loader_file_list.rsp"
 
@@ -108,41 +110,153 @@ palestradigitale/apppalestradigitale.qmltypes: apppalestradigitale_qmltyperegist
 .rcc/qmlcache/apppalestradigitale_Main_qml.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/Main.qml
 .rcc/qmlcache/apppalestradigitale_Main_qml.cpp: .qt/rcc/qmake_palestradigitale.qrc
 .rcc/qmlcache/apppalestradigitale_Main_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_Main_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
 .rcc/qmlcache/apppalestradigitale_Main_qml.cpp: palestradigitale/apppalestradigitale.qmltypes
 .rcc/qmlcache/apppalestradigitale_Main_qml.cpp: palestradigitale/qmldir
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Generating .rcc/qmlcache/apppalestradigitale_Main_qml.cpp, .rcc/qmlcache/apppalestradigitale_Main_qml.cpp.aotstats"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache"
-	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/Main.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/Main.qml"
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/Main.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/Main.qml"
 
 .rcc/qmlcache/apppalestradigitale_Main_qml.cpp.aotstats: .rcc/qmlcache/apppalestradigitale_Main_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\apppalestradigitale_Main_qml.cpp.aotstats
 
+.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp: C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/LoginPage.qml
+.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp: .qt/rcc/qmake_palestradigitale.qrc
+.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp: palestradigitale/apppalestradigitale.qmltypes
+.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp: palestradigitale/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Generating .rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp, .rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml"
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/qml/LoginPage.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/LoginPage.qml"
+
+.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.aotstats: .rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\apppalestradigitale_qml\LoginPage_qml.cpp.aotstats
+
+.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp: C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ClientDashboard.qml
+.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp: .qt/rcc/qmake_palestradigitale.qrc
+.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp: palestradigitale/apppalestradigitale.qmltypes
+.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp: palestradigitale/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Generating .rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp, .rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml"
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/qml/ClientDashboard.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ClientDashboard.qml"
+
+.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.aotstats: .rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\apppalestradigitale_qml\ClientDashboard_qml.cpp.aotstats
+
+.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp: C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/AdminDashboard.qml
+.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp: .qt/rcc/qmake_palestradigitale.qrc
+.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp: palestradigitale/apppalestradigitale.qmltypes
+.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp: palestradigitale/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Generating .rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp, .rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml"
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/qml/AdminDashboard.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/AdminDashboard.qml"
+
+.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.aotstats: .rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\apppalestradigitale_qml\AdminDashboard_qml.cpp.aotstats
+
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp: C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramsPage.qml
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp: .qt/rcc/qmake_palestradigitale.qrc
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp: palestradigitale/apppalestradigitale.qmltypes
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp: palestradigitale/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Generating .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp, .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml"
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/qml/WorkoutProgramsPage.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramsPage.qml"
+
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.aotstats: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramsPage_qml.cpp.aotstats
+
+.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp: C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml
+.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp: .qt/rcc/qmake_palestradigitale.qrc
+.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp: palestradigitale/apppalestradigitale.qmltypes
+.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp: palestradigitale/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Generating .rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp, .rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml"
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/qml/SessionsPage.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml"
+
+.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.aotstats: .rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\apppalestradigitale_qml\SessionsPage_qml.cpp.aotstats
+
+.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp: C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml
+.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp: .qt/rcc/qmake_palestradigitale.qrc
+.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp: palestradigitale/apppalestradigitale.qmltypes
+.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp: palestradigitale/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Generating .rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp, .rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml"
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/qml/NutritionPage.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml"
+
+.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.aotstats: .rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\apppalestradigitale_qml\NutritionPage_qml.cpp.aotstats
+
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp: C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramDetailPage.qml
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp: .qt/rcc/qmake_palestradigitale.qrc
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp: palestradigitale/apppalestradigitale.qmltypes
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp: palestradigitale/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Generating .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp, .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.aotstats"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml"
+	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/palestradigitale/qml/WorkoutProgramDetailPage.qml -I "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug" -I C:/Qt/6.11.0/mingw_64/qml -i "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --resource "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --dump-aot-stats --module-id=palestradigitale(apppalestradigitale) -o "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramDetailPage.qml"
+
+.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.aotstats: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramDetailPage_qml.cpp.aotstats
+
 .qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/Main.qml
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/LoginPage.qml
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ClientDashboard.qml
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/AdminDashboard.qml
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramsPage.qml
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramDetailPage.qml
 .qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: .qt/rcc/apppalestradigitale_raw_qml_0.qrc
 .qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp: C:/Qt/6.11.0/mingw_64/bin/rcc.exe
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Running rcc for resource apppalestradigitale_raw_qml_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Running rcc for resource apppalestradigitale_raw_qml_0"
 	C:\Qt\6.11.0\mingw_64\bin\rcc.exe --output "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp" --name apppalestradigitale_raw_qml_0 "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc" --no-zstd
+
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp: palestradigitale/qml/qmldir
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp: .qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp: C:/Qt/6.11.0/mingw_64/bin/rcc.exe
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Running rcc for resource apppalestradigitale_raw_qml_0_extra_qmldirs"
+	C:\Qt\6.11.0\mingw_64\bin\rcc.exe --output "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp" --name apppalestradigitale_raw_qml_0_extra_qmldirs "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc" --no-zstd
 
 apppalestradigitale_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/moc.exe
 apppalestradigitale_autogen/timestamp: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Automatic MOC and UIC for target apppalestradigitale"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Automatic MOC and UIC for target apppalestradigitale"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/apppalestradigitale_autogen.dir/AutogenInfo.json" Debug
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/apppalestradigitale_autogen/timestamp"
 
 meta_types/apppalestradigitale_json_file_list.txt: C:/Qt/6.11.0/mingw_64/bin/cmake_automoc_parser.exe
 meta_types/apppalestradigitale_json_file_list.txt: apppalestradigitale_autogen/timestamp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Running AUTOMOC file extraction for target apppalestradigitale"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Running AUTOMOC file extraction for target apppalestradigitale"
 	C:\Qt\6.11.0\mingw_64\bin\cmake_automoc_parser.exe --cmake-autogen-cache-file "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/apppalestradigitale_autogen.dir/ParseCache.txt" --cmake-autogen-info-file "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/apppalestradigitale_autogen.dir/AutogenInfo.json" --output-file-path "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/meta_types/apppalestradigitale_json_file_list.txt" --timestamp-file-path "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/meta_types/apppalestradigitale_json_file_list.txt.timestamp" --cmake-autogen-include-dir-path "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/apppalestradigitale_autogen/include"
 
 meta_types/qt6apppalestradigitale_metatypes.json: meta_types/qt6apppalestradigitale_metatypes.json.gen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Generating meta_types/qt6apppalestradigitale_metatypes.json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Generating meta_types/qt6apppalestradigitale_metatypes.json"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E true
 
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj: apppalestradigitale_autogen/mocs_compilation.cpp
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\apppalestradigitale_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\apppalestradigitale_autogen\mocs_compilation.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\apppalestradigitale_autogen\mocs_compilation.cpp"
 
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.i: cmake_force
@@ -157,7 +271,7 @@ CMakeFiles/apppalestradigitale.dir/main.cpp.obj: CMakeFiles/apppalestradigitale.
 CMakeFiles/apppalestradigitale.dir/main.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
 CMakeFiles/apppalestradigitale.dir/main.cpp.obj: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/main.cpp
 CMakeFiles/apppalestradigitale.dir/main.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/apppalestradigitale.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/apppalestradigitale.dir/main.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/main.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\main.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\main.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\main.cpp"
 
 CMakeFiles/apppalestradigitale.dir/main.cpp.i: cmake_force
@@ -168,11 +282,26 @@ CMakeFiles/apppalestradigitale.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/main.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\main.cpp" -o CMakeFiles\apppalestradigitale.dir\main.cpp.s
 
+CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.obj: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/dbmanager.cpp
+CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\dbmanager.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\dbmanager.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\dbmanager.cpp"
+
+CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\dbmanager.cpp" > CMakeFiles\apppalestradigitale.dir\dbmanager.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\dbmanager.cpp" -o CMakeFiles\apppalestradigitale.dir\dbmanager.cpp.s
+
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj: apppalestradigitale_qmltyperegistrations.cpp
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wa,-mbig-obj -MD -MT CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\apppalestradigitale_qmltyperegistrations.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\apppalestradigitale_qmltyperegistrations.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\apppalestradigitale_qmltyperegistrations.cpp"
 
 CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.i: cmake_force
@@ -187,7 +316,7 @@ CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.q
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj: .qt/rcc/qrc_qmake_palestradigitale.cpp
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_palestradigitale.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_palestradigitale.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_qmake_palestradigitale.cpp"
 
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.i: cmake_force
@@ -202,7 +331,7 @@ CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.r
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj: .rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qmlcache_loader.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qmlcache_loader.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qmlcache_loader.cpp"
 
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.i: cmake_force
@@ -217,7 +346,7 @@ CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.r
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj: .rcc/qmlcache/apppalestradigitale_Main_qml.cpp
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_Main_qml.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_Main_qml.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_Main_qml.cpp"
 
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.i: cmake_force
@@ -228,11 +357,116 @@ CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.r
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_Main_qml.cpp" -o CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_Main_qml.cpp.s
 
+CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.obj: .rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\LoginPage_qml.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\LoginPage_qml.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\LoginPage_qml.cpp"
+
+CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\LoginPage_qml.cpp" > CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\LoginPage_qml.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\LoginPage_qml.cpp" -o CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\LoginPage_qml.cpp.s
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.obj: .rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\ClientDashboard_qml.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\ClientDashboard_qml.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\ClientDashboard_qml.cpp"
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\ClientDashboard_qml.cpp" > CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\ClientDashboard_qml.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\ClientDashboard_qml.cpp" -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\ClientDashboard_qml.cpp.s
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.obj: .rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\AdminDashboard_qml.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\AdminDashboard_qml.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\AdminDashboard_qml.cpp"
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\AdminDashboard_qml.cpp" > CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\AdminDashboard_qml.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\AdminDashboard_qml.cpp" -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\AdminDashboard_qml.cpp.s
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramsPage_qml.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramsPage_qml.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramsPage_qml.cpp"
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramsPage_qml.cpp" > CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramsPage_qml.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramsPage_qml.cpp" -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramsPage_qml.cpp.s
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj: .rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\SessionsPage_qml.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\SessionsPage_qml.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\SessionsPage_qml.cpp"
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\SessionsPage_qml.cpp" > CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\SessionsPage_qml.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\SessionsPage_qml.cpp" -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\SessionsPage_qml.cpp.s
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj: .rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\NutritionPage_qml.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\NutritionPage_qml.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\NutritionPage_qml.cpp"
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\NutritionPage_qml.cpp" > CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\NutritionPage_qml.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\NutritionPage_qml.cpp" -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.rcc\qmlcache\apppalestradigitale_qml\NutritionPage_qml.cpp.s
+
+CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\14cac71d6eac88fb6cad9590f98edb76\qmlcache\apppalestradigitale_qml\WorkoutProgramDetailPage_qml.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\14cac71d6eac88fb6cad9590f98edb76\qmlcache\apppalestradigitale_qml\WorkoutProgramDetailPage_qml.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramDetailPage_qml.cpp"
+
+CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramDetailPage_qml.cpp" > CMakeFiles\apppalestradigitale.dir\14cac71d6eac88fb6cad9590f98edb76\qmlcache\apppalestradigitale_qml\WorkoutProgramDetailPage_qml.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.rcc\qmlcache\apppalestradigitale_qml\WorkoutProgramDetailPage_qml.cpp" -o CMakeFiles\apppalestradigitale.dir\14cac71d6eac88fb6cad9590f98edb76\qmlcache\apppalestradigitale_qml\WorkoutProgramDetailPage_qml.cpp.s
+
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj: .qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apppalestradigitale_raw_qml_0.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apppalestradigitale_raw_qml_0.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apppalestradigitale_raw_qml_0.cpp"
 
 CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.i: cmake_force
@@ -243,28 +477,62 @@ CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.q
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apppalestradigitale_raw_qml_0.cpp" -o CMakeFiles\apppalestradigitale.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apppalestradigitale_raw_qml_0.cpp.s
 
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj: CMakeFiles/apppalestradigitale.dir/flags.make
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj: CMakeFiles/apppalestradigitale.dir/includes_CXX.rsp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj: .qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj: CMakeFiles/apppalestradigitale.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj -MF CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.qt\rcc\qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj.d -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.qt\rcc\qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj -c "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp"
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp" > CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.qt\rcc\qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.i
+
+CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp" -o CMakeFiles\apppalestradigitale.dir\19cad87cd0d89bcf4b8f44efda7ca9e6\.qt\rcc\qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.s
+
 # Object files for target apppalestradigitale
 apppalestradigitale_OBJECTS = \
 "CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/apppalestradigitale.dir/main.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.obj" \
 "CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj" \
 "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj" \
 "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj" \
 "CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj" \
-"CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj"
+"CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj" \
+"CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj"
 
 # External object files for target apppalestradigitale
 apppalestradigitale_EXTERNAL_OBJECTS =
 
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/apppalestradigitale_autogen/mocs_compilation.cpp.obj
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/main.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/dbmanager.cpp.obj
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/apppalestradigitale_qmltyperegistrations.cpp.obj
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.obj
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.obj
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.obj
+apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.obj
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/build.make
 apppalestradigitale.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Quick.a
+apppalestradigitale.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Sql.a
 apppalestradigitale.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6OpenGL.a
 apppalestradigitale.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Gui.a
 apppalestradigitale.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Qml.a
@@ -274,7 +542,7 @@ apppalestradigitale.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/linkLibs.rsp
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/objects1.rsp
 apppalestradigitale.exe: CMakeFiles/apppalestradigitale.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable apppalestradigitale.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable apppalestradigitale.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\apppalestradigitale.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -286,9 +554,24 @@ CMakeFiles/apppalestradigitale.dir/clean:
 .PHONY : CMakeFiles/apppalestradigitale.dir/clean
 
 CMakeFiles/apppalestradigitale.dir/depend: .qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp
+CMakeFiles/apppalestradigitale.dir/depend: .qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp
 CMakeFiles/apppalestradigitale.dir/depend: .qt/rcc/qrc_qmake_palestradigitale.cpp
 CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_Main_qml.cpp
 CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_Main_qml.cpp.aotstats
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.aotstats
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.aotstats
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.aotstats
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.aotstats
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.aotstats
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.aotstats
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp
+CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.aotstats
 CMakeFiles/apppalestradigitale.dir/depend: .rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp
 CMakeFiles/apppalestradigitale.dir/depend: apppalestradigitale_autogen/timestamp
 CMakeFiles/apppalestradigitale.dir/depend: apppalestradigitale_qmltyperegistrations.cpp

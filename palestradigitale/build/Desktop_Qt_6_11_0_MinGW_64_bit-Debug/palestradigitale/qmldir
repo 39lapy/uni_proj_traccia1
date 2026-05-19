@@ -2,5 +2,12 @@ module palestradigitale
 typeinfo apppalestradigitale.qmltypes
 prefer :/qt/qml/palestradigitale/
 Main 254.0 Main.qml
+LoginPage 254.0 qml/LoginPage.qml
+ClientDashboard 254.0 qml/ClientDashboard.qml
+AdminDashboard 254.0 qml/AdminDashboard.qml
+WorkoutProgramsPage 254.0 qml/WorkoutProgramsPage.qml
+SessionsPage 254.0 qml/SessionsPage.qml
+NutritionPage 254.0 qml/NutritionPage.qml
+WorkoutProgramDetailPage 254.0 qml/WorkoutProgramDetailPage.qml
 depends QtQuick
 

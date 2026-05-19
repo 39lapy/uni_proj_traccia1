@@ -69,6 +69,13 @@ CMakeFiles/apppalestradigitale_copy_qml: .qt/apppalestradigitale_qml.txt
 
 .qt/apppalestradigitale_qml.txt: C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
 .qt/apppalestradigitale_qml.txt: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/Main.qml
+.qt/apppalestradigitale_qml.txt: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/LoginPage.qml
+.qt/apppalestradigitale_qml.txt: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ClientDashboard.qml
+.qt/apppalestradigitale_qml.txt: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/AdminDashboard.qml
+.qt/apppalestradigitale_qml.txt: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramsPage.qml
+.qt/apppalestradigitale_qml.txt: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml
+.qt/apppalestradigitale_qml.txt: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml
+.qt/apppalestradigitale_qml.txt: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramDetailPage.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Copying apppalestradigitale qml sources into build dir"
 	C:\Qt\Tools\CMake_64\bin\cmake.exe "-DFILES_INFO_PATH=C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/apppalestradigitale_qml.cmake" -P C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
 

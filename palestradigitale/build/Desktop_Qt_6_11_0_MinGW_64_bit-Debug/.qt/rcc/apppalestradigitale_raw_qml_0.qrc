@@ -1,6 +1,13 @@
 <RCC>
   <qresource prefix="/qt/qml/palestradigitale/">
     <file alias="Main.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/Main.qml</file>
+    <file alias="qml/LoginPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/LoginPage.qml</file>
+    <file alias="qml/ClientDashboard.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ClientDashboard.qml</file>
+    <file alias="qml/AdminDashboard.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/AdminDashboard.qml</file>
+    <file alias="qml/WorkoutProgramsPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramsPage.qml</file>
+    <file alias="qml/SessionsPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml</file>
+    <file alias="qml/NutritionPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml</file>
+    <file alias="qml/WorkoutProgramDetailPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramDetailPage.qml</file>
   </qresource>
 </RCC>
 
