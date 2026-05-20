@@ -33,7 +33,7 @@ ApplicationWindow {
             stackView: stack
             onLogout: {
                 db.logout()
-                stack.pop(null) // pop all the way back to login
+                stack.pop(null) // TORNA A LOGIN
             }
         }
     }
@@ -77,5 +77,25 @@ ApplicationWindow {
         WorkoutProgramDetailPage {
             stackView: stack
         }
+    }
+
+    Component {
+        id: manageUsersPage
+        ManageUsersPage { stackView: stack }
+    }
+
+    Component {
+        id: manageWorkoutProgramsPage
+        ManageWorkoutProgramsPage { stackView: stack }
+    }
+
+    Component {
+        id: manageNutritionPlansPage
+        ManageNutritionPlansPage { stackView: stack }
+    }
+
+    Component {
+        id: userProgressPage
+        UserProgressPage { stackView: stack }
     }
 }

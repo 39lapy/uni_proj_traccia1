@@ -9,5 +9,9 @@ WorkoutProgramsPage 254.0 qml/WorkoutProgramsPage.qml
 SessionsPage 254.0 qml/SessionsPage.qml
 NutritionPage 254.0 qml/NutritionPage.qml
 WorkoutProgramDetailPage 254.0 qml/WorkoutProgramDetailPage.qml
+ManageUsersPage 254.0 qml/ManageUsersPage.qml
+ManageWorkoutProgramsPage 254.0 qml/ManageWorkoutProgramsPage.qml
+ManageNutritionPlansPage 254.0 qml/ManageNutritionPlansPage.qml
+UserProgressPage 254.0 qml/UserProgressPage.qml
 depends QtQuick
 

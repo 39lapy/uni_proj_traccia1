@@ -5,7 +5,8 @@
 		"commands" : 
 		[
 			"add_custom_target",
-			"_qt_internal_deferred_aotstats_setup"
+			"_qt_internal_deferred_aotstats_setup",
+			"add_dependencies"
 		],
 		"files" : 
 		[
@@ -32,7 +33,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 1387,
+				"line" : 1326,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1331,
 				"parent" : 2
 			}
 		]
@@ -40,14 +47,19 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "module_apppalestradigitale_aotstats_target::@6890427a1f51a3e7e1df"
+			"id" : "apppalestradigitale_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "apppalestradigitale_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 4,
+			"id" : "apppalestradigitale_qmltyperegistration::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "all_aotstats::@6890427a1f51a3e7e1df",
-	"name" : "all_aotstats",
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "module_apppalestradigitale_aotstats_target::@6890427a1f51a3e7e1df",
+	"name" : "module_apppalestradigitale_aotstats_target",
 	"paths" : 
 	{
 		"build" : ".",
@@ -80,7 +92,10 @@
 				12,
 				13,
 				14,
-				15
+				15,
+				16,
+				17,
+				18
 			]
 		}
 	],
@@ -89,19 +104,13 @@
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/all_aotstats",
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/module_apppalestradigitale_aotstats_target",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/all_aotstats.rule",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/all_aotstats.aotstats.rule",
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/module_apppalestradigitale_aotstats_target.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -137,6 +146,24 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
@@ -144,6 +171,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{

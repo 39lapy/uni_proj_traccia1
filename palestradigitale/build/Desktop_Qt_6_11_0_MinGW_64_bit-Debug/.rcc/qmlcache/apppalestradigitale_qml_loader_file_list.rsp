@@ -12,3 +12,7 @@ C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Deskt
 /qt/qml/palestradigitale/qml/SessionsPage.qml
 /qt/qml/palestradigitale/qml/NutritionPage.qml
 /qt/qml/palestradigitale/qml/WorkoutProgramDetailPage.qml
+/qt/qml/palestradigitale/qml/ManageUsersPage.qml
+/qt/qml/palestradigitale/qml/ManageWorkoutProgramsPage.qml
+/qt/qml/palestradigitale/qml/ManageNutritionPlansPage.qml
+/qt/qml/palestradigitale/qml/UserProgressPage.qml

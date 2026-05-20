@@ -300,6 +300,98 @@ QVariantList DbManager::getNutritionTips(int userId) {
     return result;
 }
 
+
+QVariantList DbManager::getAllUsers() {
+    QVariantList result;
+    QSqlQuery query("SELECT user_id, first_name, last_name, email, user_type, registration_date FROM users");
+    while (query.next()) {
+        QVariantMap user;
+        user["user_id"] = query.value("user_id");
+        user["first_name"] = query.value("first_name");
+        user["last_name"] = query.value("last_name");
+        user["email"] = query.value("email");
+        user["user_type"] = query.value("user_type");
+        user["registration_date"] = query.value("registration_date");
+        result.append(user);
+    }
+    return result;
+}
+
+bool DbManager::deleteUser(int userId) {
+    QSqlQuery query;
+    query.prepare("DELETE FROM users WHERE user_id = :uid");
+    query.bindValue(":uid", userId);
+    if (query.exec()) {
+        logDbChange("DELETE", "users", "user_id: " + QString::number(userId));
+        return true;
+    }
+    return false;
+}
+
+QVariantList DbManager::getClients() {
+    QVariantList result;
+    QSqlQuery query("SELECT user_id, first_name, last_name, email FROM users WHERE user_type = 'client'");
+    while (query.next()) {
+        QVariantMap user;
+        user["user_id"] = query.value("user_id");
+        user["first_name"] = query.value("first_name");
+        user["last_name"] = query.value("last_name");
+        user["email"] = query.value("email");
+        result.append(user);
+    }
+    return result;
+}
+
+QVariantList DbManager::getTrainers() {
+    QVariantList result;
+    QSqlQuery query("SELECT user_id, first_name, last_name, email FROM users WHERE user_type = 'trainer'");
+    while (query.next()) {
+        QVariantMap user;
+        user["user_id"] = query.value("user_id");
+        user["first_name"] = query.value("first_name");
+        user["last_name"] = query.value("last_name");
+        user["email"] = query.value("email");
+        result.append(user);
+    }
+    return result;
+}
+
+bool DbManager::assignTrainer(int trainerId, int clientId, const QString &startDate) {
+    QSqlQuery query;
+    query.prepare("INSERT INTO assignments (trainer_id, client_id, start_date) "
+                  "VALUES (:tid, :cid, :date)");
+    query.bindValue(":tid", trainerId);
+    query.bindValue(":cid", clientId);
+    query.bindValue(":date", startDate);
+    if (query.exec()) {
+        logDbChange("INSERT", "assignments", "trainer_id: " + QString::number(trainerId) +
+                                                 " | client_id: " + QString::number(clientId));
+        return true;
+    }
+    return false;
+}
+
+QVariantList DbManager::getAssignments() {
+    QVariantList result;
+    QSqlQuery query("SELECT a.assignment_id, a.start_date, a.end_date, "
+                    "t.first_name || ' ' || t.last_name AS trainer, "
+                    "c.first_name || ' ' || c.last_name AS client "
+                    "FROM assignments a "
+                    "JOIN users t ON a.trainer_id = t.user_id "
+                    "JOIN users c ON a.client_id = c.user_id");
+    while (query.next()) {
+        QVariantMap assignment;
+        assignment["assignment_id"] = query.value("assignment_id");
+        assignment["trainer"] = query.value("trainer");
+        assignment["client"] = query.value("client");
+        assignment["start_date"] = query.value("start_date");
+        assignment["end_date"] = query.value("end_date");
+        result.append(assignment);
+    }
+    return result;
+}
+
+
 bool DbManager::addFeedback(int userId, int programId, int planId, int rating, const QString &comment) {
     QSqlQuery query;
     query.prepare("INSERT INTO feedback (user_id, program_id, plan_id, rating, comment) "
@@ -404,4 +496,104 @@ void DbManager::seedTestData() {
 
         qDebug() << "Nutrition tips seeded.";
     }
+}
+
+bool DbManager::addWorkoutProgram(const QString &title, const QString &goal,
+                                  const QString &difficulty, int durationWeeks,
+                                  const QString &description) {
+    QSqlQuery query;
+    query.prepare("INSERT INTO workout_programs (trainer_id, title, goal, difficulty, duration_weeks, description) "
+                  "VALUES (:tid, :title, :goal, :diff, :weeks, :desc)");
+    query.bindValue(":tid", m_currentUserId);
+    query.bindValue(":title", title);
+    query.bindValue(":goal", goal);
+    query.bindValue(":diff", difficulty);
+    query.bindValue(":weeks", durationWeeks);
+    query.bindValue(":desc", description);
+    if (query.exec()) {
+        logDbChange("INSERT", "workout_programs", "title: " + title + " | difficulty: " + difficulty);
+        return true;
+    }
+    return false;
+}
+
+bool DbManager::deleteWorkoutProgram(int programId) {
+    QSqlQuery query;
+    query.prepare("DELETE FROM workout_programs WHERE program_id = :pid");
+    query.bindValue(":pid", programId);
+    if (query.exec()) {
+        logDbChange("DELETE", "workout_programs", "program_id: " + QString::number(programId));
+        return true;
+    }
+    return false;
+}
+
+bool DbManager::updateWorkoutProgram(int programId, const QString &title, const QString &goal,
+                                     const QString &difficulty, int durationWeeks,
+                                     const QString &description) {
+    QSqlQuery query;
+    query.prepare("UPDATE workout_programs SET title=:title, goal=:goal, difficulty=:diff, "
+                  "duration_weeks=:weeks, description=:desc WHERE program_id=:pid");
+    query.bindValue(":title", title);
+    query.bindValue(":goal", goal);
+    query.bindValue(":diff", difficulty);
+    query.bindValue(":weeks", durationWeeks);
+    query.bindValue(":desc", description);
+    query.bindValue(":pid", programId);
+    if (query.exec()) {
+        logDbChange("UPDATE", "workout_programs", "program_id: " + QString::number(programId) + " | title: " + title);
+        return true;
+    }
+    return false;
+}
+
+bool DbManager::addNutritionPlan(const QString &title, const QString &description) {
+    QSqlQuery query;
+    query.prepare("INSERT INTO nutrition_plans (nutritionist_id, title, description) "
+                  "VALUES (:nid, :title, :desc)");
+    query.bindValue(":nid", m_currentUserId);
+    query.bindValue(":title", title);
+    query.bindValue(":desc", description);
+    if (query.exec()) {
+        logDbChange("INSERT", "nutrition_plans", "title: " + title);
+        return true;
+    }
+    return false;
+}
+
+bool DbManager::deleteNutritionPlan(int planId) {
+    QSqlQuery query;
+    query.prepare("DELETE FROM nutrition_plans WHERE plan_id = :pid");
+    query.bindValue(":pid", planId);
+    if (query.exec()) {
+        logDbChange("DELETE", "nutrition_plans", "plan_id: " + QString::number(planId));
+        return true;
+    }
+    return false;
+}
+
+bool DbManager::addNutritionTip(int planId, int userId, const QString &date, const QString &content) {
+    QSqlQuery query;
+    query.prepare("INSERT INTO nutrition_tips (plan_id, user_id, tip_date, content) "
+                  "VALUES (:pid, :uid, :date, :content)");
+    query.bindValue(":pid", planId);
+    query.bindValue(":uid", userId);
+    query.bindValue(":date", date);
+    query.bindValue(":content", content);
+    if (query.exec()) {
+        logDbChange("INSERT", "nutrition_tips", "plan_id: " + QString::number(planId) + " | user_id: " + QString::number(userId));
+        return true;
+    }
+    return false;
+}
+
+bool DbManager::deleteNutritionTip(int tipId) {
+    QSqlQuery query;
+    query.prepare("DELETE FROM nutrition_tips WHERE tip_id = :tid");
+    query.bindValue(":tid", tipId);
+    if (query.exec()) {
+        logDbChange("DELETE", "nutrition_tips", "tip_id: " + QString::number(tipId));
+        return true;
+    }
+    return false;
 }

@@ -27,13 +27,13 @@
 			"qt6_add_qml_module",
 			"qt_add_qml_module",
 			"add_dependencies",
-			"_qt_internal_qml_copy_files_to_build_dir",
-			"_qt_internal_write_deferred_qmlls_build_ini_file",
 			"_qt_internal_scan_qml_imports",
 			"_qt_internal_generate_deploy_qml_imports_script",
 			"cmake_language",
 			"_qt_internal_finalize_executable",
 			"qt6_finalize_target",
+			"_qt_internal_qml_copy_files_to_build_dir",
+			"_qt_internal_write_deferred_qmlls_build_ini_file",
 			"add_compile_definitions",
 			"project",
 			"target_include_directories",
@@ -71,8 +71,8 @@
 			"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
 			"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
 			"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
-			"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:1179:EVAL",
 			"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:865:EVAL",
+			"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:1179:EVAL",
 			"build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
 		],
 		"nodes" : 
@@ -107,13 +107,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 32,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 24,
+				"line" : 27,
 				"parent" : 0
 			},
 			{
@@ -411,7 +411,48 @@
 				"parent" : 59
 			},
 			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 18,
+				"file" : 21,
+				"line" : 1,
+				"parent" : 61
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 896,
+				"parent" : 62
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 818,
+				"parent" : 63
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 818,
+				"parent" : 64
+			},
+			{
 				"command" : 14,
+				"file" : 10,
+				"line" : 4921,
+				"parent" : 65
+			},
+			{
+				"command" : 13,
+				"file" : 10,
+				"line" : 4696,
+				"parent" : 66
+			},
+			{
+				"command" : 19,
 				"file" : 10,
 				"line" : 1045,
 				"parent" : 24
@@ -420,63 +461,22 @@
 				"command" : 13,
 				"file" : 10,
 				"line" : 3223,
-				"parent" : 61
-			},
-			{
-				"file" : 1,
-				"line" : -1,
-				"parent" : 0
-			},
-			{
-				"command" : 15,
-				"file" : 21,
-				"line" : 1,
-				"parent" : 63
-			},
-			{
-				"command" : 13,
-				"file" : 10,
-				"line" : 1477,
-				"parent" : 64
+				"parent" : 68
 			},
 			{
 				"command" : 20,
 				"file" : 22,
 				"line" : 1,
-				"parent" : 63
-			},
-			{
-				"command" : 19,
-				"file" : 0,
-				"line" : 896,
-				"parent" : 66
-			},
-			{
-				"command" : 18,
-				"file" : 0,
-				"line" : 818,
-				"parent" : 67
-			},
-			{
-				"command" : 17,
-				"file" : 0,
-				"line" : 818,
-				"parent" : 68
-			},
-			{
-				"command" : 16,
-				"file" : 10,
-				"line" : 4921,
-				"parent" : 69
+				"parent" : 61
 			},
 			{
 				"command" : 13,
 				"file" : 10,
-				"line" : 4696,
+				"line" : 1477,
 				"parent" : 70
 			},
 			{
-				"command" : 14,
+				"command" : 19,
 				"file" : 10,
 				"line" : 1051,
 				"parent" : 24
@@ -684,6 +684,42 @@
 				"parent" : 88
 			},
 			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3694,
+				"parent" : 88
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3887,
+				"parent" : 88
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3694,
+				"parent" : 88
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3887,
+				"parent" : 88
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3694,
+				"parent" : 88
+			},
+			{
+				"command" : 25,
+				"file" : 10,
+				"line" : 3887,
+				"parent" : 88
+			},
+			{
 				"command" : 30,
 				"file" : 10,
 				"line" : 3979,
@@ -693,19 +729,19 @@
 				"command" : 29,
 				"file" : 0,
 				"line" : 419,
-				"parent" : 107
+				"parent" : 113
 			},
 			{
 				"command" : 28,
 				"file" : 0,
 				"line" : 2655,
-				"parent" : 108
+				"parent" : 114
 			},
 			{
 				"command" : 25,
 				"file" : 0,
 				"line" : 2195,
-				"parent" : 109
+				"parent" : 115
 			},
 			{
 				"command" : 30,
@@ -717,31 +753,31 @@
 				"command" : 29,
 				"file" : 0,
 				"line" : 419,
-				"parent" : 111
+				"parent" : 117
 			},
 			{
 				"command" : 28,
 				"file" : 0,
 				"line" : 2655,
-				"parent" : 112
+				"parent" : 118
 			},
 			{
 				"command" : 25,
 				"file" : 0,
 				"line" : 2195,
-				"parent" : 113
+				"parent" : 119
 			},
 			{
 				"command" : 33,
 				"file" : 0,
 				"line" : 890,
-				"parent" : 66
+				"parent" : 62
 			},
 			{
 				"command" : 25,
 				"file" : 0,
 				"line" : 2320,
-				"parent" : 115
+				"parent" : 121
 			}
 		]
 	},
@@ -902,8 +938,11 @@
 				19,
 				21,
 				23,
-				24,
-				25
+				25,
+				27,
+				29,
+				30,
+				31
 			]
 		},
 		{
@@ -1059,27 +1098,27 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 62,
-			"id" : "apppalestradigitale_copy_qml::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 65,
-			"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 71,
-			"id" : "apppalestradigitale_qmlimportscan::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 73,
-			"id" : "apppalestradigitale_copy_res::@6890427a1f51a3e7e1df"
-		},
-		{
 			"id" : "apppalestradigitale_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
 			"id" : "apppalestradigitale_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 67,
+			"id" : "apppalestradigitale_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 69,
+			"id" : "apppalestradigitale_copy_qml::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 71,
+			"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 73,
+			"id" : "apppalestradigitale_copy_res::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "apppalestradigitale::@6890427a1f51a3e7e1df",
@@ -1232,19 +1271,22 @@
 				19,
 				21,
 				23,
-				24,
 				25,
-				26,
-				28,
+				27,
 				29,
+				30,
 				31,
-				49,
-				50,
-				51,
-				52,
-				53,
-				54,
-				55
+				32,
+				34,
+				35,
+				37,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64
 			]
 		},
 		{
@@ -1260,7 +1302,10 @@
 				16,
 				18,
 				20,
-				22
+				22,
+				24,
+				26,
+				28
 			]
 		},
 		{
@@ -1274,20 +1319,14 @@
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				27,
-				30
+				33,
+				36
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				32,
-				33,
-				34,
-				35,
-				36,
-				37,
 				38,
 				39,
 				40,
@@ -1298,7 +1337,16 @@
 				45,
 				46,
 				47,
-				48
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57
 			]
 		}
 	],
@@ -1452,45 +1500,81 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 107,
+			"path" : "qml/ManageUsersPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 108,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 109,
+			"path" : "qml/ManageWorkoutProgramsPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
 			"backtrace" : 110,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 111,
+			"path" : "qml/ManageNutritionPlansPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 112,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 116,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 114,
+			"backtrace" : 120,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 116,
+			"backtrace" : 122,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qmake_palestradigitale.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 116,
+			"backtrace" : 122,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qmldir",
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 116,
+			"backtrace" : 122,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 116,
+			"backtrace" : 122,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 116,
+			"backtrace" : 122,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qml/qmldir",
 			"sourceGroupIndex" : 3
@@ -1571,6 +1655,24 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{

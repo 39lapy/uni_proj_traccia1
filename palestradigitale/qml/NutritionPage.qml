@@ -67,7 +67,7 @@ Page {
             }
         }
 
-        // Daily tips
+        // MOTD
         Text {
             text: "Consigli Giornalieri"
             font.pixelSize: 18

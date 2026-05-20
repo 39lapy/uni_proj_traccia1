@@ -407,6 +407,54 @@ apppalestradigitale_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale_autogen.dir\build.make CMakeFiles/apppalestradigitale_autogen.dir/build
 .PHONY : apppalestradigitale_autogen/fast
 
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.obj: 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.obj
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.obj
+
+# target to build an object file
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.obj
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.obj
+
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.i: 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.i
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.i
+
+# target to preprocess a source file
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.i
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.i
+
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.s: 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.s
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.s
+
+# target to generate assembly for a file
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.s
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.s
+
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.obj: 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.obj
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.obj
+
+# target to build an object file
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.obj
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.obj
+
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.i: 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.i
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.i
+
+# target to preprocess a source file
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.i
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.i
+
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.s: 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.s
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.s
+
+# target to generate assembly for a file
+14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.s
+.PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.s
+
 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.obj: 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.obj
 .PHONY : 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.obj
 
@@ -503,6 +551,30 @@ apppalestradigitale_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.s
 .PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.s
 
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.obj: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.obj
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.obj
+
+# target to build an object file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.obj
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.obj
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.i: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.i
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.i
+
+# target to preprocess a source file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.i
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.i
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.s: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.s
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.s
+
+# target to generate assembly for a file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.s
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.s
+
 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.obj: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.obj
 .PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.obj
 
@@ -550,6 +622,30 @@ apppalestradigitale_autogen/fast:
 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.s
 .PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.s
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.obj: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.obj
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.obj
+
+# target to build an object file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.obj
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.obj
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.i: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.i
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.i
+
+# target to preprocess a source file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.i
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.i
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.s: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.s
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.s
+
+# target to generate assembly for a file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.s
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.s
 
 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.obj: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.obj
 .PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.obj
@@ -822,6 +918,12 @@ help:
 	@echo ... generate_qmlls_build_ini_file
 	@echo ... module_apppalestradigitale_aotstats_target
 	@echo ... apppalestradigitale
+	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.obj
+	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.i
+	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.s
+	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.obj
+	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.i
+	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.s
 	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.obj
 	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.i
 	@echo ... 14cac71d6eac88fb6cad9590f98edb76/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.s
@@ -834,12 +936,18 @@ help:
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.obj
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.i
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.s
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.obj
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.i
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.s
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.obj
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.i
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.s
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.obj
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.i
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.s
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.obj
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.i
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.s
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.obj
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.i
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.s

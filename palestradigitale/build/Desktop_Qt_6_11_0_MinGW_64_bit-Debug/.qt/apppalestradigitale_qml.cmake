@@ -18,6 +18,14 @@ set(src_and_dest_list
     "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qml/NutritionPage.qml"
     "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramDetailPage.qml"
     "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qml/WorkoutProgramDetailPage.qml"
+    "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ManageUsersPage.qml"
+    "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qml/ManageUsersPage.qml"
+    "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ManageWorkoutProgramsPage.qml"
+    "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qml/ManageWorkoutProgramsPage.qml"
+    "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ManageNutritionPlansPage.qml"
+    "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qml/ManageNutritionPlansPage.qml"
+    "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/UserProgressPage.qml"
+    "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/palestradigitale/qml/UserProgressPage.qml"
 
 )
 set(timestamp_file "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/apppalestradigitale_qml.txt")

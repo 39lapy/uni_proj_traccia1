@@ -78,4 +78,24 @@ ApplicationWindow {
             stackView: stack
         }
     }
+
+    Component {
+        id: manageUsersPage
+        ManageUsersPage { stackView: stack }
+    }
+
+    Component {
+        id: manageWorkoutProgramsPage
+        ManageWorkoutProgramsPage { stackView: stack }
+    }
+
+    Component {
+        id: manageNutritionPlansPage
+        ManageNutritionPlansPage { stackView: stack }
+    }
+
+    Component {
+        id: userProgressPage
+        UserProgressPage { stackView: stack }
+    }
 }

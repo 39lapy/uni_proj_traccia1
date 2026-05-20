@@ -174,6 +174,211 @@
                 },
                 {
                     "access": "public",
+                    "index": 13,
+                    "lineNumber": 39,
+                    "name": "getAllUsers",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 14,
+                    "lineNumber": 40,
+                    "name": "deleteUser",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "lineNumber": 41,
+                    "name": "getClients",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "lineNumber": 42,
+                    "name": "getTrainers",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "trainerId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "clientId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "startDate",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 17,
+                    "lineNumber": 43,
+                    "name": "assignTrainer",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 18,
+                    "lineNumber": 44,
+                    "name": "getAssignments",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "goal",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "difficulty",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "durationWeeks",
+                            "type": "int"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 19,
+                    "lineNumber": 46,
+                    "name": "addWorkoutProgram",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "programId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 20,
+                    "lineNumber": 49,
+                    "name": "deleteWorkoutProgram",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "programId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "goal",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "difficulty",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "durationWeeks",
+                            "type": "int"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 21,
+                    "lineNumber": 50,
+                    "name": "updateWorkoutProgram",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 22,
+                    "lineNumber": 54,
+                    "name": "addNutritionPlan",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "planId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 23,
+                    "lineNumber": 55,
+                    "name": "deleteNutritionPlan",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "planId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "date",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "content",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 24,
+                    "lineNumber": 56,
+                    "name": "addNutritionTip",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "tipId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 25,
+                    "lineNumber": 57,
+                    "name": "deleteNutritionTip",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
                     "arguments": [
                         {
                             "name": "userId",
@@ -196,8 +401,8 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 13,
-                    "lineNumber": 39,
+                    "index": 26,
+                    "lineNumber": 59,
                     "name": "addFeedback",
                     "returnType": "bool"
                 }
