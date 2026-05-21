@@ -46,11 +46,27 @@
                             "message": "Cannot access value for name planList"
                         },
                         {
+                            "codegenResult": 2,
+                            "column": 36,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 44,
+                            "message": "Cannot access value for name stackView"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 43,
+                            "message": ""
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 43,
+                            "line": 48,
                             "message": ""
                         },
                         {
@@ -58,7 +74,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 48,
+                            "line": 53,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -66,7 +82,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 54,
+                            "line": 59,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -74,7 +90,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 57,
+                            "line": 62,
                             "message": ""
                         },
                         {
@@ -82,7 +98,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 58,
+                            "line": 63,
                             "message": ""
                         },
                         {
@@ -90,7 +106,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 62,
+                            "line": 67,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -98,7 +114,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 81,
+                            "line": 86,
                             "message": ""
                         },
                         {
@@ -106,7 +122,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 82,
+                            "line": 87,
                             "message": ""
                         },
                         {
@@ -114,7 +130,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 84,
+                            "line": 89,
                             "message": "Cannot access value for name db"
                         },
                         {
@@ -122,7 +138,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 88,
+                            "line": 93,
                             "message": "Cannot access value for name tipList"
                         },
                         {
@@ -130,7 +146,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 95,
+                            "line": 100,
                             "message": ""
                         },
                         {
@@ -138,7 +154,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 100,
+                            "line": 105,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -146,7 +162,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 107,
+                            "line": 112,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -154,7 +170,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 109,
+                            "line": 114,
                             "message": ""
                         },
                         {
@@ -162,7 +178,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 110,
+                            "line": 115,
                             "message": ""
                         }
                     ],

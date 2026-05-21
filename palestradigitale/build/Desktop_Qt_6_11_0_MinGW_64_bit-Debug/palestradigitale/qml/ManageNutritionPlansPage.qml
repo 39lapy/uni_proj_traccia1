@@ -30,7 +30,7 @@ Page {
             height: parent.height - tabBar.height
             currentIndex: tabBar.currentIndex
 
-            // --- TAB 1: LIST ---
+            // --- TAB 1: LISTA ---
             Item {
                 ListView {
                     id: planList

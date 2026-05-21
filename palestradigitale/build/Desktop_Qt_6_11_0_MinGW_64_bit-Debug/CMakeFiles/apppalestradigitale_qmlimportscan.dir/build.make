@@ -83,6 +83,8 @@ CMakeFiles/apppalestradigitale_qmlimportscan: .qt/qml_imports/apppalestradigital
 .qt/qml_imports/apppalestradigitale_build.cmake: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ManageWorkoutProgramsPage.qml
 .qt/qml_imports/apppalestradigitale_build.cmake: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ManageNutritionPlansPage.qml
 .qt/qml_imports/apppalestradigitale_build.cmake: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/UserProgressPage.qml
+.qt/qml_imports/apppalestradigitale_build.cmake: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/RegisterPage.qml
+.qt/qml_imports/apppalestradigitale_build.cmake: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPlanDetailPage.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Running qmlimportscanner for apppalestradigitale"
 	cd /d C:\Users\lapax\DOCUME~1\REPOUN~1\UNI_PR~1\PALEST~1 && call "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat" C:/Qt/6.11.0/mingw_64/bin/qmlimportscanner.exe "@C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/qml_imports/apppalestradigitale_build.rsp"
 

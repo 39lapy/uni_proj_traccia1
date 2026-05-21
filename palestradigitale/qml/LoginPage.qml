@@ -4,6 +4,7 @@ import QtQuick.Controls
 Page {
     id: loginPage
     signal loginSuccess(string userType)
+    signal goToRegister
 
     Column {
         anchors.centerIn: parent
@@ -48,6 +49,13 @@ Page {
                     errorText.visible = true
                 }
             }
+        }
+
+        Button {
+            text: "Non hai un account? Registrati"
+            width: parent.width
+            flat: true
+            onClicked: goToRegister()
         }
     }
 }

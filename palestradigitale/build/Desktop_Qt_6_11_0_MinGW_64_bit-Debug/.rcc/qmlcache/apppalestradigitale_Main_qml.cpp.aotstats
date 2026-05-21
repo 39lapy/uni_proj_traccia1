@@ -39,26 +39,18 @@
                         },
                         {
                             "codegenResult": 2,
-                            "column": 24,
+                            "column": 29,
                             "durationMicroseconds": 0,
-                            "functionName": "stackView",
-                            "line": 33,
-                            "message": "Cannot resolve property type StackView for binding on stackView."
+                            "functionName": "onGoToRegister",
+                            "line": 27,
+                            "message": "Cannot access value for name stack"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 23,
+                            "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "onLogout",
+                            "functionName": "stackView",
                             "line": 34,
-                            "message": "Cannot access value for name db"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 24,
-                            "durationMicroseconds": 0,
-                            "functionName": "stackView",
-                            "line": 44,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         },
                         {
@@ -66,7 +58,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "onLogout",
-                            "line": 45,
+                            "line": 35,
                             "message": "Cannot access value for name db"
                         },
                         {
@@ -74,7 +66,23 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "stackView",
-                            "line": 56,
+                            "line": 45,
+                            "message": "Cannot resolve property type StackView for binding on stackView."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "onLogout",
+                            "line": 46,
+                            "message": "Cannot access value for name db"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "stackView",
+                            "line": 57,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         },
                         {
@@ -82,7 +90,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "stackView",
-                            "line": 63,
+                            "line": 64,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         },
                         {
@@ -90,7 +98,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "stackView",
-                            "line": 70,
+                            "line": 71,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         },
                         {
@@ -98,7 +106,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "stackView",
-                            "line": 78,
+                            "line": 79,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         },
                         {
@@ -106,7 +114,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "stackView",
-                            "line": 84,
+                            "line": 85,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         },
                         {
@@ -114,7 +122,7 @@
                             "column": 48,
                             "durationMicroseconds": 0,
                             "functionName": "stackView",
-                            "line": 89,
+                            "line": 90,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         },
                         {
@@ -122,7 +130,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "stackView",
-                            "line": 94,
+                            "line": 95,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         },
                         {
@@ -130,7 +138,23 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "stackView",
-                            "line": 99,
+                            "line": 100,
+                            "message": "Cannot resolve property type StackView for binding on stackView."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "stackView",
+                            "line": 105,
+                            "message": "Cannot resolve property type StackView for binding on stackView."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 46,
+                            "durationMicroseconds": 0,
+                            "functionName": "stackView",
+                            "line": 110,
                             "message": "Cannot resolve property type StackView for binding on stackView."
                         }
                     ],

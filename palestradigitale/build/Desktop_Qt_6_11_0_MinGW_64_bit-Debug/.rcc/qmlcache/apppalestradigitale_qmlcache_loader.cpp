@@ -89,6 +89,20 @@ namespace _qt_qml_palestradigitale_qml_UserProgressPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_palestradigitale_qml_RegisterPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_palestradigitale_qml_NutritionPlanDetailPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -115,6 +129,8 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/ManageWorkoutProgramsPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_ManageWorkoutProgramsPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/ManageNutritionPlansPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_ManageNutritionPlansPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/UserProgressPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_UserProgressPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/RegisterPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_RegisterPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/NutritionPlanDetailPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_NutritionPlanDetailPage_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

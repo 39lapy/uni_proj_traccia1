@@ -39,6 +39,11 @@ Page {
                 color: "#e3f2fd"
                 x: 8
 
+                MouseArea {
+                        anchors.fill: parent
+                        onClicked: stackView.push(nutritionPlanDetailPage, { plan: modelData })
+                    }
+
                 Column {
                     anchors.fill: parent
                     anchors.margins: 10

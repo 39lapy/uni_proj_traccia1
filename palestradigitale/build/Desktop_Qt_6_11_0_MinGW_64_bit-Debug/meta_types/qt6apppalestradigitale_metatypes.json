@@ -384,6 +384,82 @@
                             {
                                 "name": "userId",
                                 "type": "int"
+                            }
+                        ],
+                        "index": 26,
+                        "lineNumber": 59,
+                        "name": "getUserProgress",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "userId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 27,
+                        "lineNumber": 60,
+                        "name": "getFeedbackByUser",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "role",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 28,
+                        "lineNumber": 62,
+                        "name": "generateRegistrationCode",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "code",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "role",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 29,
+                        "lineNumber": 63,
+                        "name": "validateRegistrationCode",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "code",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 30,
+                        "lineNumber": 64,
+                        "name": "markCodeAsUsed",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "index": 31,
+                        "lineNumber": 65,
+                        "name": "getRegistrationCodes",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "userId",
+                                "type": "int"
                             },
                             {
                                 "name": "programId",
@@ -402,8 +478,8 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 26,
-                        "lineNumber": 59,
+                        "index": 32,
+                        "lineNumber": 67,
                         "name": "addFeedback",
                         "returnType": "bool"
                     }

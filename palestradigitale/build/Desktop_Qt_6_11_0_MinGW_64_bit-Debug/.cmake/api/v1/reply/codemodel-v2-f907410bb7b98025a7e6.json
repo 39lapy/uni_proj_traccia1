@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-05c7b701aaba6a4d7157.json",
+					"jsonFile" : "directory-.-Debug-2509d1129616e6b28274.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -76,7 +76,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-all_aotstats-Debug-82f049c9e0e23e79e858.json",
+					"jsonFile" : "target-all_aotstats-Debug-8009750e6642f9bce47b.json",
 					"name" : "all_aotstats",
 					"projectIndex" : 0
 				},
@@ -111,7 +111,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "apppalestradigitale::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-apppalestradigitale-Debug-001f4d410ae633d56fb4.json",
+					"jsonFile" : "target-apppalestradigitale-Debug-8f95e428be26d34d795d.json",
 					"name" : "apppalestradigitale",
 					"projectIndex" : 0
 				},
@@ -125,7 +125,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "apppalestradigitale_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-apppalestradigitale_autogen_timestamp_deps-Debug-b2ccc023ef5665348507.json",
+					"jsonFile" : "target-apppalestradigitale_autogen_timestamp_deps-Debug-38934ede8f6217e1eebc.json",
 					"name" : "apppalestradigitale_autogen_timestamp_deps",
 					"projectIndex" : 0
 				},
@@ -202,7 +202,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "module_apppalestradigitale_aotstats_target::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-module_apppalestradigitale_aotstats_target-Debug-2a1f86e9519c40ee5cc3.json",
+					"jsonFile" : "target-module_apppalestradigitale_aotstats_target-Debug-f3f65bfa3a0539c55c81.json",
 					"name" : "module_apppalestradigitale_aotstats_target",
 					"projectIndex" : 0
 				}

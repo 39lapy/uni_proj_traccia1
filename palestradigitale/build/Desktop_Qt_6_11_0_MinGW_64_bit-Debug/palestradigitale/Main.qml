@@ -24,6 +24,7 @@ ApplicationWindow {
                     stack.push(adminDashboard)
                 }
             }
+            onGoToRegister: stack.push(registerPage)
         }
     }
 
@@ -33,7 +34,7 @@ ApplicationWindow {
             stackView: stack
             onLogout: {
                 db.logout()
-                stack.pop(null) // pop all the way back to login
+                stack.pop(null) // TORNA A LOGIN
             }
         }
     }
@@ -97,5 +98,15 @@ ApplicationWindow {
     Component {
         id: userProgressPage
         UserProgressPage { stackView: stack }
+    }
+
+    Component {
+        id: registerPage
+        RegisterPage { stackView: stack }
+    }
+
+    Component {
+        id: nutritionPlanDetailPage
+        NutritionPlanDetailPage { stackView: stack }
     }
 }

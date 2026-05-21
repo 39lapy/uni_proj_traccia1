@@ -56,6 +56,14 @@ public:
     Q_INVOKABLE bool addNutritionTip(int planId, int userId, const QString &date, const QString &content);
     Q_INVOKABLE bool deleteNutritionTip(int tipId);
 
+    Q_INVOKABLE QVariantList getUserProgress(int userId);
+    Q_INVOKABLE QVariantList getFeedbackByUser(int userId);
+
+    Q_INVOKABLE QString generateRegistrationCode(const QString &role);
+    Q_INVOKABLE bool validateRegistrationCode(const QString &code, const QString &role);
+    Q_INVOKABLE bool markCodeAsUsed(const QString &code);
+    Q_INVOKABLE QVariantList getRegistrationCodes();
+
     Q_INVOKABLE bool addFeedback(int userId, int programId, int planId, int rating, const QString &comment);
 
 private:

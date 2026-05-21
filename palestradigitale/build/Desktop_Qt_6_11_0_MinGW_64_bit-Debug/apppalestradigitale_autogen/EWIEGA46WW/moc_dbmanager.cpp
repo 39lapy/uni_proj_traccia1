@@ -88,6 +88,14 @@ template <> constexpr inline auto DbManager::qt_create_metaobjectdata<qt_meta_ta
         "content",
         "deleteNutritionTip",
         "tipId",
+        "getUserProgress",
+        "getFeedbackByUser",
+        "generateRegistrationCode",
+        "role",
+        "validateRegistrationCode",
+        "code",
+        "markCodeAsUsed",
+        "getRegistrationCodes",
         "addFeedback",
         "rating",
         "comment"
@@ -181,10 +189,32 @@ template <> constexpr inline auto DbManager::qt_create_metaobjectdata<qt_meta_ta
         QtMocHelpers::MethodData<bool(int)>(48, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::Int, 49 },
         }}),
+        // Method 'getUserProgress'
+        QtMocHelpers::MethodData<QVariantList(int)>(50, 2, QMC::AccessPublic, 0x80000000 | 14, {{
+            { QMetaType::Int, 20 },
+        }}),
+        // Method 'getFeedbackByUser'
+        QtMocHelpers::MethodData<QVariantList(int)>(51, 2, QMC::AccessPublic, 0x80000000 | 14, {{
+            { QMetaType::Int, 20 },
+        }}),
+        // Method 'generateRegistrationCode'
+        QtMocHelpers::MethodData<QString(const QString &)>(52, 2, QMC::AccessPublic, QMetaType::QString, {{
+            { QMetaType::QString, 53 },
+        }}),
+        // Method 'validateRegistrationCode'
+        QtMocHelpers::MethodData<bool(const QString &, const QString &)>(54, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 55 }, { QMetaType::QString, 53 },
+        }}),
+        // Method 'markCodeAsUsed'
+        QtMocHelpers::MethodData<bool(const QString &)>(56, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 55 },
+        }}),
+        // Method 'getRegistrationCodes'
+        QtMocHelpers::MethodData<QVariantList()>(57, 2, QMC::AccessPublic, 0x80000000 | 14),
         // Method 'addFeedback'
-        QtMocHelpers::MethodData<bool(int, int, int, int, const QString &)>(50, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 20 }, { QMetaType::Int, 22 }, { QMetaType::Int, 44 }, { QMetaType::Int, 51 },
-            { QMetaType::QString, 52 },
+        QtMocHelpers::MethodData<bool(int, int, int, int, const QString &)>(58, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 20 }, { QMetaType::Int, 22 }, { QMetaType::Int, 44 }, { QMetaType::Int, 59 },
+            { QMetaType::QString, 60 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -260,7 +290,19 @@ void DbManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         case 25: { bool _r = _t->deleteNutritionTip((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 26: { bool _r = _t->addFeedback((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
+        case 26: { QVariantList _r = _t->getUserProgress((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 27: { QVariantList _r = _t->getFeedbackByUser((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 28: { QString _r = _t->generateRegistrationCode((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<QString*>(_a[0]) = std::move(_r); }  break;
+        case 29: { bool _r = _t->validateRegistrationCode((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 30: { bool _r = _t->markCodeAsUsed((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 31: { QVariantList _r = _t->getRegistrationCodes();
+            if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 32: { bool _r = _t->addFeedback((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -286,14 +328,14 @@ int DbManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 27)
+        if (_id < 33)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 27;
+        _id -= 33;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 27)
+        if (_id < 33)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 27;
+        _id -= 33;
     }
     return _id;
 }

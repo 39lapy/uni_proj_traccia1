@@ -2,6 +2,7 @@
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
+#include <QRandomGenerator>
 
 DbManager::DbManager(QObject *parent) : QObject(parent) {}
 
@@ -95,6 +96,13 @@ bool DbManager::init() {
                "FOREIGN KEY (user_id) REFERENCES users(user_id),"
                "FOREIGN KEY (program_id) REFERENCES workout_programs(program_id),"
                "FOREIGN KEY (plan_id) REFERENCES nutrition_plans(plan_id)"
+               ")");
+
+    query.exec("CREATE TABLE IF NOT EXISTS registration_codes ("
+               "code TEXT PRIMARY KEY,"
+               "role TEXT NOT NULL,"
+               "used INTEGER DEFAULT 0,"
+               "created_at TEXT DEFAULT (date('now'))"
                ")");
 
     return true;
@@ -596,4 +604,101 @@ bool DbManager::deleteNutritionTip(int tipId) {
         return true;
     }
     return false;
+}
+
+QVariantList DbManager::getUserProgress(int userId) {
+    QVariantList result;
+    QSqlQuery query;
+    query.prepare("SELECT s.session_id, s.session_datetime, s.duration_minutes, "
+                  "s.completed, w.title, w.difficulty "
+                  "FROM sessions s "
+                  "JOIN workout_programs w ON s.program_id = w.program_id "
+                  "WHERE s.user_id = :uid "
+                  "ORDER BY s.session_datetime DESC");
+    query.bindValue(":uid", userId);
+    query.exec();
+    while (query.next()) {
+        QVariantMap session;
+        session["session_id"] = query.value("session_id");
+        session["datetime"] = query.value("session_datetime");
+        session["duration"] = query.value("duration_minutes");
+        session["completed"] = query.value("completed");
+        session["program"] = query.value("title");
+        session["difficulty"] = query.value("difficulty");
+        result.append(session);
+    }
+    return result;
+}
+
+QVariantList DbManager::getFeedbackByUser(int userId) {
+    QVariantList result;
+    QSqlQuery query;
+    query.prepare("SELECT f.feedback_id, f.rating, f.comment, f.feedback_date, "
+                  "w.title AS program_title, n.title AS plan_title "
+                  "FROM feedback f "
+                  "LEFT JOIN workout_programs w ON f.program_id = w.program_id "
+                  "LEFT JOIN nutrition_plans n ON f.plan_id = n.plan_id "
+                  "WHERE f.user_id = :uid "
+                  "ORDER BY f.feedback_date DESC");
+    query.bindValue(":uid", userId);
+    query.exec();
+    while (query.next()) {
+        QVariantMap feedback;
+        feedback["feedback_id"] = query.value("feedback_id");
+        feedback["rating"] = query.value("rating");
+        feedback["comment"] = query.value("comment");
+        feedback["date"] = query.value("feedback_date");
+        feedback["program"] = query.value("program_title");
+        feedback["plan"] = query.value("plan_title");
+        result.append(feedback);
+    }
+    return result;
+}
+
+QString DbManager::generateRegistrationCode(const QString &role) {
+    QString code = QString::number(QRandomGenerator::global()->bounded(100000, 999999));
+    QSqlQuery query;
+    query.prepare("INSERT INTO registration_codes (code, role) VALUES (:code, :role)");
+    query.bindValue(":code", code);
+    query.bindValue(":role", role);
+    if (query.exec()) {
+        logDbChange("INSERT", "registration_codes", "role: " + role + " | code: " + code);
+        return code;
+    }
+    return "";
+}
+
+bool DbManager::validateRegistrationCode(const QString &code, const QString &role) {
+    QSqlQuery query;
+    query.prepare("SELECT code FROM registration_codes "
+                  "WHERE code = :code AND role = :role AND used = 0");
+    query.bindValue(":code", code);
+    query.bindValue(":role", role);
+    query.exec();
+    return query.next();
+}
+
+bool DbManager::markCodeAsUsed(const QString &code) {
+    QSqlQuery query;
+    query.prepare("UPDATE registration_codes SET used = 1 WHERE code = :code");
+    query.bindValue(":code", code);
+    if (query.exec()) {
+        logDbChange("UPDATE", "registration_codes", "code: " + code + " marked as used");
+        return true;
+    }
+    return false;
+}
+
+QVariantList DbManager::getRegistrationCodes() {
+    QVariantList result;
+    QSqlQuery query("SELECT code, role, used, created_at FROM registration_codes ORDER BY created_at DESC");
+    while (query.next()) {
+        QVariantMap c;
+        c["code"] = query.value("code");
+        c["role"] = query.value("role");
+        c["used"] = query.value("used");
+        c["created_at"] = query.value("created_at");
+        result.append(c);
+    }
+    return result;
 }

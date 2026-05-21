@@ -24,6 +24,7 @@ ApplicationWindow {
                     stack.push(adminDashboard)
                 }
             }
+            onGoToRegister: stack.push(registerPage)
         }
     }
 
@@ -97,5 +98,15 @@ ApplicationWindow {
     Component {
         id: userProgressPage
         UserProgressPage { stackView: stack }
+    }
+
+    Component {
+        id: registerPage
+        RegisterPage { stackView: stack }
+    }
+
+    Component {
+        id: nutritionPlanDetailPage
+        NutritionPlanDetailPage { stackView: stack }
     }
 }

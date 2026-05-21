@@ -91,7 +91,7 @@ Page {
                     anchors.fill: parent
                     spacing: 0
 
-                    // Assign trainer form
+                    // Assign trainer
                     Rectangle {
                         width: parent.width
                         height: 160
