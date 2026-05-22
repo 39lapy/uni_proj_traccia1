@@ -26,6 +26,8 @@ qt_add_qml_module(apppalestradigitale
         QML_FILES qml/UserProgressPage.qml
         QML_FILES qml/RegisterPage.qml
         QML_FILES qml/NutritionPlanDetailPage.qml
+        QML_FILES qml/ManageCodesPage.qml
+        QML_FILES qml/SessionDetailPage.qml
 )
 target_link_libraries(apppalestradigitale PRIVATE Qt6::Quick Qt6::Sql)
 

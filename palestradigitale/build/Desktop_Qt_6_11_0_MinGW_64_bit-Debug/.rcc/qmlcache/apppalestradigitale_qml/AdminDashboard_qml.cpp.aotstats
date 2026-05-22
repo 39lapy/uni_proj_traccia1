@@ -121,8 +121,32 @@
                             "codegenResult": 2,
                             "column": 20,
                             "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 55,
+                            "message": "Could not find property \"width\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 56,
+                            "message": "Could not find property \"visible\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 59,
+                            "line": 57,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 66,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -130,7 +154,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 56,
+                            "line": 63,
                             "message": "Could not find property \"bottom\"."
                         },
                         {
@@ -138,7 +162,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 57,
+                            "line": 64,
                             "message": "Could not find property \"horizontalCenter\"."
                         }
                     ],

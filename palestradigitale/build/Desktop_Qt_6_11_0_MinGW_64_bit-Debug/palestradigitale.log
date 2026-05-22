@@ -1,75 +1,31 @@
-[2026-05-19 11:36:32] INIT -> database | connection opened
-[2026-05-19 11:36:32] INIT -> database | connection opened
-[2026-05-19 11:36:43] LOGIN -> users | email: mario@test.com | type: client
-[2026-05-19 11:37:11] INSERT -> feedback | user_id: 1 | rating: 1
-[2026-05-19 11:40:39] INIT -> database | connection opened
-[2026-05-19 11:40:39] INIT -> database | connection opened
-[2026-05-19 11:40:50] LOGIN -> users | email: admin | type: administrator
-[2026-05-19 11:40:55] LOGOUT -> users | user_id: 3
-[2026-05-19 11:41:08] LOGIN -> users | email: mario@test.com | type: client
-[2026-05-19 11:41:16] INSERT -> sessions | user_id: 1 | program_id: 1 | duration: 40
-[2026-05-20 12:07:02] INIT -> database | connection opened
-[2026-05-20 12:07:02] INIT -> database | connection opened
-[2026-05-20 12:07:17] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 12:07:34] LOGOUT -> users | user_id: 3
-[2026-05-20 12:07:38] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 12:11:34] INIT -> database | connection opened
-[2026-05-20 12:11:34] INIT -> database | connection opened
-[2026-05-20 12:12:00] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 12:14:12] INIT -> database | connection opened
-[2026-05-20 12:14:12] INIT -> database | connection opened
-[2026-05-20 12:14:38] LOGIN -> users | email: mario@test.com | type: client
-[2026-05-20 12:14:50] INSERT -> feedback | user_id: 1 | rating: 5
-[2026-05-20 12:14:56] INSERT -> feedback | user_id: 1 | rating: 1
-[2026-05-20 12:19:26] INIT -> database | connection opened
-[2026-05-20 12:19:26] INIT -> database | connection opened
-[2026-05-20 12:19:41] INIT -> database | connection opened
-[2026-05-20 12:19:41] INIT -> database | connection opened
-[2026-05-20 12:20:16] INIT -> database | connection opened
-[2026-05-20 12:20:16] INIT -> database | connection opened
-[2026-05-20 12:20:21] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 12:21:08] INSERT -> assignments | trainer_id: 2 | client_id: 1
-[2026-05-20 14:00:11] INIT -> database | connection opened
-[2026-05-20 14:00:11] INIT -> database | connection opened
-[2026-05-20 14:00:27] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 14:00:50] LOGOUT -> users | user_id: 3
-[2026-05-20 14:01:00] LOGIN -> users | email: mario@test.com | type: client
-[2026-05-20 14:01:17] INSERT -> feedback | user_id: 1 | rating: 1
-[2026-05-20 14:01:55] LOGOUT -> users | user_id: 1
-[2026-05-20 14:09:45] INIT -> database | connection opened
-[2026-05-20 14:09:57] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 14:10:28] INSERT -> workout_programs | title: PROVA | difficulty: intermediate
-[2026-05-20 14:10:45] LOGOUT -> users | user_id: 3
-[2026-05-20 14:10:59] LOGIN -> users | email: mario@test.com | type: client
-[2026-05-20 14:11:06] SHUTDOWN -> database | connection closed
-[2026-05-20 14:11:16] INIT -> database | connection opened
-[2026-05-20 14:11:23] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 14:11:33] INSERT -> workout_programs | title: a | difficulty: beginner
-[2026-05-20 14:11:40] LOGOUT -> users | user_id: 3
-[2026-05-20 14:11:48] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 14:14:00] LOGOUT -> users | user_id: 3
-[2026-05-20 14:14:09] LOGIN -> users | email: mario@test.com | type: client
-[2026-05-20 14:14:14] LOGOUT -> users | user_id: 1
-[2026-05-20 14:14:21] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 14:14:29] DELETE -> workout_programs | program_id: 5
-[2026-05-20 14:15:33] SHUTDOWN -> database | connection closed
-[2026-05-20 14:18:03] INIT -> database | connection opened
-[2026-05-20 14:18:14] LOGIN -> users | email: admin | type: administrator
-[2026-05-20 14:18:40] SHUTDOWN -> database | connection closed
-[2026-05-21 18:41:34] INIT -> database | connection opened
-[2026-05-21 18:41:52] LOGIN -> users | email: admin | type: administrator
-[2026-05-21 18:42:28] SHUTDOWN -> database | connection closed
-[2026-05-21 18:43:18] INIT -> database | connection opened
-[2026-05-21 18:43:25] LOGIN -> users | email: admin | type: administrator
-[2026-05-21 18:43:42] SHUTDOWN -> database | connection closed
-[2026-05-21 18:47:24] INIT -> database | connection opened
-[2026-05-21 18:48:39] INSERT -> users | email: eddyocane@test.com | type: client
-[2026-05-21 18:48:54] LOGIN -> users | email: eddyocane@test.com | type: client
-[2026-05-21 18:48:56] LOGOUT -> users | user_id: 4
-[2026-05-21 18:48:58] SHUTDOWN -> database | connection closed
-[2026-05-21 18:51:16] INIT -> database | connection opened
-[2026-05-21 18:51:26] LOGIN -> users | email: mario@test.com | type: client
-[2026-05-21 18:51:44] SHUTDOWN -> database | connection closed
-[2026-05-21 18:58:22] INIT -> database | connection opened
-[2026-05-21 18:58:53] LOGIN -> users | email: admin | type: administrator
-[2026-05-21 18:59:08] SHUTDOWN -> database | connection closed
+[2026-05-22 11:02:56] INIT -> database | connection opened
+[2026-05-22 11:03:30] LOGIN -> users | email: admin | type: administrator
+[2026-05-22 11:04:42] INSERT -> registration_codes | role: trainer | code: 466956
+[2026-05-22 11:04:51] INSERT -> registration_codes | role: nutritionist | code: 623048
+[2026-05-22 11:05:22] LOGOUT -> users | user_id: 3
+[2026-05-22 11:06:19] INSERT -> users | email: porcacciodeddio@test.com | type: trainer
+[2026-05-22 11:06:19] UPDATE -> registration_codes | code: 466956 marked as used
+[2026-05-22 11:06:35] LOGIN -> users | email: porcacciodeddio@test.com | type: trainer
+[2026-05-22 11:06:49] LOGOUT -> users | user_id: 4
+[2026-05-22 11:06:59] SHUTDOWN -> database | connection closed
+[2026-05-22 11:09:17] INIT -> database | connection opened
+[2026-05-22 11:09:26] LOGIN -> users | email: porcacciodeddio@test.com | type: trainer
+[2026-05-22 11:09:30] LOGOUT -> users | user_id: 4
+[2026-05-22 11:09:37] LOGIN -> users | email: admin | type: administrator
+[2026-05-22 11:09:45] SHUTDOWN -> database | connection closed
+[2026-05-22 11:12:11] INIT -> database | connection opened
+[2026-05-22 11:12:26] LOGIN -> users | email: mario@test.com | type: client
+[2026-05-22 11:12:31] INSERT -> sessions | user_id: 1 | program_id: 1 | duration: 0
+[2026-05-22 11:13:08] INSERT -> sessions | user_id: 1 | program_id: 1 | duration: 50
+[2026-05-22 11:13:50] INSERT -> sessions | user_id: 1 | program_id: 1 | duration: 2147483647
+[2026-05-22 11:14:02] INSERT -> sessions | user_id: 1 | program_id: 1 | duration: 0
+[2026-05-22 11:14:13] INSERT -> sessions | user_id: 1 | program_id: 1 | duration: 999999999
+[2026-05-22 11:14:45] LOGOUT -> users | user_id: 1
+[2026-05-22 11:14:56] LOGIN -> users | email: admin | type: administrator
+[2026-05-22 11:15:36] INSERT -> assignments | trainer_id: 4 | client_id: 1
+[2026-05-22 11:17:15] LOGOUT -> users | user_id: 3
+[2026-05-22 11:17:32] LOGIN -> users | email: porcacciodeddio@test.com | type: trainer
+[2026-05-22 11:18:04] SHUTDOWN -> database | connection closed
+[2026-05-22 11:24:14] INIT -> database | connection opened
+[2026-05-22 11:25:20] LOGIN -> users | email: mario@test.com | type: client
+[2026-05-22 11:27:03] SHUTDOWN -> database | connection closed

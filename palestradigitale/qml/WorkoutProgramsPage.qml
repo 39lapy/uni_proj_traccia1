@@ -11,6 +11,27 @@ Page {
         }
     }
 
+    function applyFilters() {
+        var diff = difficultyFilter.currentIndex === 0 ? "" : difficultyFilter.currentText
+        var goal = goalFilter.currentIndex === 0 ? "" : goalFilter.currentText
+
+        if (diff === "" && goal === "") {
+            programList.model = db.getWorkoutPrograms()
+        } else if (diff !== "" && goal === "") {
+            programList.model = db.getWorkoutProgramsByDifficulty(diff)
+        } else if (diff === "" && goal !== "") {
+            programList.model = db.getWorkoutProgramsByGoal(goal)
+        } else {
+            // both filters active — filter client-side
+            var all = db.getWorkoutProgramsByDifficulty(diff)
+            var filtered = []
+            for (var i = 0; i < all.length; i++) {
+                if (all[i].goal === goal) filtered.push(all[i])
+            }
+            programList.model = filtered
+        }
+    }
+
     Column {
         anchors.fill: parent
         spacing: 0
@@ -24,17 +45,23 @@ Page {
 
             ComboBox {
                 id: difficultyFilter
-                width: 150
-                model: ["Tutti", "beginner", "intermediate", "advanced"]
-                onActivated: programList.model = currentIndex === 0
-                    ? db.getWorkoutPrograms()
-                    : db.getWorkoutProgramsByDifficulty(currentText)
+                width: 130
+                model: ["Difficoltà", "beginner", "intermediate", "advanced"]
+                onActivated: applyFilters()
+            }
+
+            ComboBox {
+                id: goalFilter
+                width: 130
+                model: ["Obiettivo"].concat(db.getGoals())
+                onActivated: applyFilters()
             }
 
             Button {
                 text: "Reset"
                 onClicked: {
                     difficultyFilter.currentIndex = 0
+                    goalFilter.currentIndex = 0
                     programList.model = db.getWorkoutPrograms()
                 }
             }

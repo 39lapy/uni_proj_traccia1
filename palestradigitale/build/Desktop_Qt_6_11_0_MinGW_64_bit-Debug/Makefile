@@ -575,6 +575,30 @@ apppalestradigitale_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.s
 .PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.s
 
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.obj: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.obj
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.obj
+
+# target to build an object file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.obj
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.obj
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.i: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.i
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.i
+
+# target to preprocess a source file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.i
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.i
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.s: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.s
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.s
+
+# target to generate assembly for a file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.s
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.s
+
 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.obj: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.obj
 .PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.obj
 
@@ -646,6 +670,30 @@ apppalestradigitale_autogen/fast:
 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.cpp.s
 .PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.cpp.s
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.obj: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.obj
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.obj
+
+# target to build an object file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.obj
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.obj
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.i: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.i
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.i
+
+# target to preprocess a source file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.i
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.i
+
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.s: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.s
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.s
+
+# target to generate assembly for a file
+19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale.dir\build.make CMakeFiles/apppalestradigitale.dir/19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.s
+.PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.s
 
 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.obj: 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.obj
 .PHONY : 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.obj
@@ -987,6 +1035,9 @@ help:
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.obj
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.i
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.s
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.obj
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.i
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.s
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.obj
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.i
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.s
@@ -996,6 +1047,9 @@ help:
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.obj
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.i
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.s
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.obj
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.i
+	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.s
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.obj
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.i
 	@echo ... 19cad87cd0d89bcf4b8f44efda7ca9e6/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.s

@@ -7,6 +7,14 @@
                     "entries": [
                         {
                             "codegenResult": 2,
+                            "column": 5,
+                            "durationMicroseconds": 2000,
+                            "functionName": "applyFilters",
+                            "line": 14,
+                            "message": "Cannot retrieve a non-object type by ID: difficultyFilter"
+                        },
+                        {
+                            "codegenResult": 2,
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
@@ -18,7 +26,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 15,
+                            "line": 36,
                             "message": ""
                         },
                         {
@@ -26,7 +34,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 20,
+                            "line": 41,
                             "message": ""
                         },
                         {
@@ -34,7 +42,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 28,
+                            "line": 49,
                             "message": "Could not find property \"model\"."
                         },
                         {
@@ -42,7 +50,23 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "onActivated",
-                            "line": 29,
+                            "line": 50,
+                            "message": "Could not find signal \"activated\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "model",
+                            "line": 56,
+                            "message": "Could not find property \"model\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "onActivated",
+                            "line": 57,
                             "message": "Could not find signal \"activated\"."
                         },
                         {
@@ -50,7 +74,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 36,
+                            "line": 62,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -58,7 +82,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 46,
+                            "line": 73,
                             "message": ""
                         },
                         {
@@ -66,7 +90,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 47,
+                            "line": 74,
                             "message": ""
                         },
                         {
@@ -74,7 +98,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 49,
+                            "line": 76,
                             "message": "Cannot access value for name db"
                         },
                         {
@@ -82,7 +106,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 53,
+                            "line": 80,
                             "message": "Cannot access value for name programList"
                         },
                         {
@@ -90,7 +114,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 61,
+                            "line": 88,
                             "message": "Cannot access value for name stackView"
                         },
                         {
@@ -98,7 +122,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 60,
+                            "line": 87,
                             "message": ""
                         },
                         {
@@ -106,7 +130,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 65,
+                            "line": 92,
                             "message": ""
                         },
                         {
@@ -114,7 +138,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 70,
+                            "line": 97,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -122,7 +146,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 76,
+                            "line": 103,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -130,7 +154,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 82,
+                            "line": 109,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -138,7 +162,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 88,
+                            "line": 115,
                             "message": "Cannot access value for name modelData"
                         }
                     ],

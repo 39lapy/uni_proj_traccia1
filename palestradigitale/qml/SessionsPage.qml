@@ -95,6 +95,12 @@ Page {
                 color: modelData.completed ? "#c8e6c9" : "#f0f0f0"
                 x: 8
 
+                MouseArea {
+                        anchors.fill: parent
+                        onClicked: stackView.push(sessionDetailPage, { session: modelData })
+                    }
+
+
                 Column {
                     anchors.fill: parent
                     anchors.margins: 10

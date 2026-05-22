@@ -96,6 +96,7 @@ template <> constexpr inline auto DbManager::qt_create_metaobjectdata<qt_meta_ta
         "code",
         "markCodeAsUsed",
         "getRegistrationCodes",
+        "getGoals",
         "addFeedback",
         "rating",
         "comment"
@@ -211,10 +212,12 @@ template <> constexpr inline auto DbManager::qt_create_metaobjectdata<qt_meta_ta
         }}),
         // Method 'getRegistrationCodes'
         QtMocHelpers::MethodData<QVariantList()>(57, 2, QMC::AccessPublic, 0x80000000 | 14),
+        // Method 'getGoals'
+        QtMocHelpers::MethodData<QStringList()>(58, 2, QMC::AccessPublic, QMetaType::QStringList),
         // Method 'addFeedback'
-        QtMocHelpers::MethodData<bool(int, int, int, int, const QString &)>(58, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 20 }, { QMetaType::Int, 22 }, { QMetaType::Int, 44 }, { QMetaType::Int, 59 },
-            { QMetaType::QString, 60 },
+        QtMocHelpers::MethodData<bool(int, int, int, int, const QString &)>(59, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 20 }, { QMetaType::Int, 22 }, { QMetaType::Int, 44 }, { QMetaType::Int, 60 },
+            { QMetaType::QString, 61 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -302,7 +305,9 @@ void DbManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         case 31: { QVariantList _r = _t->getRegistrationCodes();
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 32: { bool _r = _t->addFeedback((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
+        case 32: { QStringList _r = _t->getGoals();
+            if (_a[0]) *reinterpret_cast<QStringList*>(_a[0]) = std::move(_r); }  break;
+        case 33: { bool _r = _t->addFeedback((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -328,14 +333,14 @@ int DbManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 33)
+        if (_id < 34)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 33;
+        _id -= 34;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 33)
+        if (_id < 34)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 33;
+        _id -= 34;
     }
     return _id;
 }

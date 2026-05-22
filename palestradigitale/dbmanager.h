@@ -64,6 +64,8 @@ public:
     Q_INVOKABLE bool markCodeAsUsed(const QString &code);
     Q_INVOKABLE QVariantList getRegistrationCodes();
 
+    Q_INVOKABLE QStringList getGoals();
+
     Q_INVOKABLE bool addFeedback(int userId, int programId, int planId, int rating, const QString &comment);
 
 private:

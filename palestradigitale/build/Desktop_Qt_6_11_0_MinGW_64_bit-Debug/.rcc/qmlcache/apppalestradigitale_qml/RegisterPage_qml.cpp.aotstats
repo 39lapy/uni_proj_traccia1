@@ -10,7 +10,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 10,
+                            "line": 11,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "contentWidth",
-                            "line": 16,
+                            "line": 19,
                             "message": "Could not find property \"contentWidth\"."
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 15,
+                            "line": 18,
                             "message": "Could not find property \"fill\"."
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 19,
+                            "line": 22,
                             "message": ""
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalCenter",
-                            "line": 27,
+                            "line": 30,
                             "message": ""
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 32,
+                            "line": 35,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 38,
+                            "line": 41,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 44,
+                            "line": 47,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -74,7 +74,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "inputMethodHints",
-                            "line": 46,
+                            "line": 49,
                             "message": "Could not find property \"inputMethodHints\"."
                         },
                         {
@@ -82,7 +82,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 51,
+                            "line": 54,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -90,7 +90,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "echoMode",
-                            "line": 53,
+                            "line": 56,
                             "message": "Could not find property \"echoMode\"."
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 58,
+                            "line": 61,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -106,7 +106,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "echoMode",
-                            "line": 60,
+                            "line": 63,
                             "message": "Could not find property \"echoMode\"."
                         },
                         {
@@ -114,7 +114,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 71,
+                            "line": 74,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -122,16 +122,8 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 72,
+                            "line": 75,
                             "message": "Could not find property \"model\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 27,
-                            "durationMicroseconds": 0,
-                            "functionName": "wrapMode",
-                            "line": 79,
-                            "message": ""
                         },
                         {
                             "codegenResult": 0,
@@ -142,11 +134,35 @@
                             "message": ""
                         },
                         {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 82,
+                            "message": "Cannot retrieve a non-object type by ID: userTypePicker"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 92,
+                            "message": "Could not find property \"width\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "inputMethodHints",
+                            "line": 94,
+                            "message": "Could not find property \"inputMethodHints\"."
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 88,
+                            "line": 102,
                             "message": ""
                         },
                         {
@@ -154,7 +170,23 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 89,
+                            "line": 103,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "wrapMode",
+                            "line": 111,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 112,
                             "message": ""
                         },
                         {
@@ -162,7 +194,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 94,
+                            "line": 117,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -170,7 +202,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 95,
+                            "line": 118,
                             "message": "Could not find signal \"clicked\"."
                         }
                     ],

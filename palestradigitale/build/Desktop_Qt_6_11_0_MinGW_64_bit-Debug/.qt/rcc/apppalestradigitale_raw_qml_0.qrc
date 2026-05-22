@@ -14,6 +14,8 @@
     <file alias="qml/UserProgressPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/UserProgressPage.qml</file>
     <file alias="qml/RegisterPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/RegisterPage.qml</file>
     <file alias="qml/NutritionPlanDetailPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPlanDetailPage.qml</file>
+    <file alias="qml/ManageCodesPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ManageCodesPage.qml</file>
+    <file alias="qml/SessionDetailPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionDetailPage.qml</file>
   </qresource>
 </RCC>
 

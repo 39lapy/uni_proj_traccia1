@@ -456,6 +456,13 @@
                     },
                     {
                         "access": "public",
+                        "index": 32,
+                        "lineNumber": 67,
+                        "name": "getGoals",
+                        "returnType": "QStringList"
+                    },
+                    {
+                        "access": "public",
                         "arguments": [
                             {
                                 "name": "userId",
@@ -478,8 +485,8 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 32,
-                        "lineNumber": 67,
+                        "index": 33,
+                        "lineNumber": 69,
                         "name": "addFeedback",
                         "returnType": "bool"
                     }

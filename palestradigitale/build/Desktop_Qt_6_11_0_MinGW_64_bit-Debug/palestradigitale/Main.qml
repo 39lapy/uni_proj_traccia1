@@ -109,4 +109,14 @@ ApplicationWindow {
         id: nutritionPlanDetailPage
         NutritionPlanDetailPage { stackView: stack }
     }
+
+    Component {
+        id: manageCodesPage
+        ManageCodesPage { stackView: stack }
+    }
+
+    Component {
+        id: sessionDetailPage
+        SessionDetailPage { stackView: stack }
+    }
 }

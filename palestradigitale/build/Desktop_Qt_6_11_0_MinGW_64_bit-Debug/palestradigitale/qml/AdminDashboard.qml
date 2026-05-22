@@ -49,6 +49,13 @@ Page {
             width: parent.width
             onClicked: stackView.push(userProgressPage)
         }
+
+        Button {
+            text: "🔑 Codici Registrazione"
+            width: parent.width
+            visible: db.currentUserType() === "administrator"
+            onClicked: stackView.push(manageCodesPage)
+        }
     }
 
     Button {

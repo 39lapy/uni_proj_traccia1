@@ -156,6 +156,22 @@
                             "functionName": "stackView",
                             "line": 110,
                             "message": "Cannot resolve property type StackView for binding on stackView."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 38,
+                            "durationMicroseconds": 0,
+                            "functionName": "stackView",
+                            "line": 115,
+                            "message": "Cannot resolve property type StackView for binding on stackView."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 40,
+                            "durationMicroseconds": 0,
+                            "functionName": "stackView",
+                            "line": 120,
+                            "message": "Cannot resolve property type StackView for binding on stackView."
                         }
                     ],
                     "filePath": "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/Main.qml"

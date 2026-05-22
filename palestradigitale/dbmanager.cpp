@@ -702,3 +702,12 @@ QVariantList DbManager::getRegistrationCodes() {
     }
     return result;
 }
+
+QStringList DbManager::getGoals() {
+    QStringList result;
+    QSqlQuery query("SELECT DISTINCT goal FROM workout_programs WHERE goal IS NOT NULL AND goal != ''");
+    while (query.next()) {
+        result.append(query.value(0).toString());
+    }
+    return result;
+}
