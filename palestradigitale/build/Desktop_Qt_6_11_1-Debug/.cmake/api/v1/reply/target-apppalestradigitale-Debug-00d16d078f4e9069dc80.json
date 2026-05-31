@@ -1,0 +1,1588 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "apppalestradigitale"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"set_property",
+			"find_dependency",
+			"_qt_internal_find_third_party_dependencies",
+			"_qt_internal_find_qt_dependencies",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_dependencies",
+			"_qt_internal_qml_copy_files_to_build_dir",
+			"_qt_internal_write_deferred_qmlls_build_ini_file",
+			"_qt_internal_scan_qml_imports",
+			"_qt_internal_generate_deploy_qml_imports_script",
+			"cmake_language",
+			"_qt_internal_finalize_executable",
+			"qt6_finalize_target",
+			"add_compile_definitions",
+			"project",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"qt6_target_qml_sources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"_qt_internal_expose_deferred_files_to_ide"
+		],
+		"files" : 
+		[
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake",
+			"build/Desktop_Qt_6_11_1-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
+			"/home/motang006/Qt/Tools/CMake/share/cmake-3.30/Modules/FindOpenGL.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6/FindWrapOpenGL.cmake",
+			"/home/motang006/Qt/Tools/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlTargets.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:1179:EVAL",
+			"/home/motang006/Qt/6.11.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL",
+			"build/Desktop_Qt_6_11_1-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1033,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 687,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 766,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 234,
+				"parent" : 7
+			},
+			{
+				"file" : 3,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 55,
+				"parent" : 9
+			},
+			{
+				"file" : 2,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 61,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 40,
+				"parent" : 9
+			},
+			{
+				"file" : 11,
+				"parent" : 13
+			},
+			{
+				"command" : 12,
+				"file" : 11,
+				"line" : 50,
+				"parent" : 14
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 142,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 252,
+				"parent" : 17
+			},
+			{
+				"file" : 10,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 10,
+				"line" : 40,
+				"parent" : 19
+			},
+			{
+				"file" : 9,
+				"parent" : 20
+			},
+			{
+				"command" : 11,
+				"file" : 9,
+				"line" : 37,
+				"parent" : 21
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 22
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 23
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 259,
+				"parent" : 24
+			},
+			{
+				"file" : 6,
+				"parent" : 25
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 13,
+				"parent" : 26
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 259,
+				"parent" : 27
+			},
+			{
+				"file" : 5,
+				"parent" : 28
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 712,
+				"parent" : 29
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 710,
+				"parent" : 29
+			},
+			{
+				"command" : 14,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 13,
+				"file" : 12,
+				"line" : 1507,
+				"parent" : 32
+			},
+			{
+				"command" : 5,
+				"file" : 12,
+				"line" : 693,
+				"parent" : 33
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 142,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 35
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 252,
+				"parent" : 36
+			},
+			{
+				"file" : 14,
+				"parent" : 37
+			},
+			{
+				"command" : 7,
+				"file" : 14,
+				"line" : 58,
+				"parent" : 38
+			},
+			{
+				"file" : 13,
+				"parent" : 39
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 61,
+				"parent" : 40
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 688,
+				"parent" : 2
+			},
+			{
+				"command" : 16,
+				"file" : 12,
+				"line" : 1045,
+				"parent" : 33
+			},
+			{
+				"command" : 15,
+				"file" : 12,
+				"line" : 3223,
+				"parent" : 43
+			},
+			{
+				"command" : 16,
+				"file" : 12,
+				"line" : 1051,
+				"parent" : 33
+			},
+			{
+				"command" : 15,
+				"file" : 12,
+				"line" : 3223,
+				"parent" : 45
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 17,
+				"file" : 15,
+				"line" : 1,
+				"parent" : 47
+			},
+			{
+				"command" : 15,
+				"file" : 12,
+				"line" : 1477,
+				"parent" : 48
+			},
+			{
+				"command" : 22,
+				"file" : 16,
+				"line" : 1,
+				"parent" : 47
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 898,
+				"parent" : 50
+			},
+			{
+				"command" : 20,
+				"file" : 0,
+				"line" : 818,
+				"parent" : 51
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 818,
+				"parent" : 52
+			},
+			{
+				"command" : 18,
+				"file" : 12,
+				"line" : 4921,
+				"parent" : 53
+			},
+			{
+				"command" : 15,
+				"file" : 12,
+				"line" : 4696,
+				"parent" : 54
+			},
+			{
+				"command" : 24,
+				"file" : 1,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"file" : 17,
+				"parent" : 56
+			},
+			{
+				"command" : 23,
+				"file" : 17,
+				"line" : 81,
+				"parent" : 57
+			},
+			{
+				"command" : 26,
+				"file" : 12,
+				"line" : 910,
+				"parent" : 33
+			},
+			{
+				"command" : 25,
+				"file" : 12,
+				"line" : 4356,
+				"parent" : 59
+			},
+			{
+				"command" : 25,
+				"file" : 12,
+				"line" : 4386,
+				"parent" : 59
+			},
+			{
+				"command" : 28,
+				"file" : 12,
+				"line" : 4181,
+				"parent" : 59
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 1613,
+				"parent" : 62
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 4347,
+				"parent" : 59
+			},
+			{
+				"command" : 31,
+				"file" : 12,
+				"line" : 962,
+				"parent" : 33
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 419,
+				"parent" : 65
+			},
+			{
+				"command" : 29,
+				"file" : 0,
+				"line" : 2659,
+				"parent" : 66
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 2199,
+				"parent" : 67
+			},
+			{
+				"command" : 32,
+				"file" : 12,
+				"line" : 1035,
+				"parent" : 33
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 33,
+				"file" : 12,
+				"line" : 3831,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 1974,
+				"parent" : 71
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3694,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 12,
+				"line" : 3887,
+				"parent" : 69
+			},
+			{
+				"command" : 31,
+				"file" : 12,
+				"line" : 3979,
+				"parent" : 69
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 419,
+				"parent" : 104
+			},
+			{
+				"command" : 29,
+				"file" : 0,
+				"line" : 2659,
+				"parent" : 105
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 2199,
+				"parent" : 106
+			},
+			{
+				"command" : 31,
+				"file" : 12,
+				"line" : 4033,
+				"parent" : 69
+			},
+			{
+				"command" : 30,
+				"file" : 0,
+				"line" : 419,
+				"parent" : 108
+			},
+			{
+				"command" : 29,
+				"file" : 0,
+				"line" : 2659,
+				"parent" : 109
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 2199,
+				"parent" : 110
+			},
+			{
+				"command" : 34,
+				"file" : 0,
+				"line" : 892,
+				"parent" : 50
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 2324,
+				"parent" : 112
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 42,
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 42,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 58,
+					"define" : "QT_QML_DEBUG"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_SQL_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/apppalestradigitale_autogen/include"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale"
+				},
+				{
+					"backtrace" : 61,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include/QtQml"
+				},
+				{
+					"backtrace" : 61,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include"
+				},
+				{
+					"backtrace" : 61,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include/QtCore"
+				},
+				{
+					"backtrace" : 61,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 61,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 61,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include/QtQuick"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include/QtGui"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/motang006/Qt/6.11.1/gcc_64/include/QtSql"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				5,
+				6,
+				8,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				40,
+				41
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 44,
+			"id" : "apppalestradigitale_copy_qml::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 46,
+			"id" : "apppalestradigitale_copy_res::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 49,
+			"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 55,
+			"id" : "apppalestradigitale_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "apppalestradigitale_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "apppalestradigitale_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "apppalestradigitale::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/tmp"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/motang006/Qt/6.11.1/gcc_64/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/home/motang006/Qt/6.11.1/gcc_64/lib/libQt6Quick.so.6.11.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/home/motang006/Qt/6.11.1/gcc_64/lib/libQt6Sql.so.6.11.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/home/motang006/Qt/6.11.1/gcc_64/lib/libQt6OpenGL.so.6.11.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/home/motang006/Qt/6.11.1/gcc_64/lib/libQt6Gui.so.6.11.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "/usr/lib/libGLX.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "/usr/lib/libOpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/motang006/Qt/6.11.1/gcc_64/lib/libQt6Qml.so.6.11.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "/home/motang006/Qt/6.11.1/gcc_64/lib/libQt6Network.so.6.11.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "/home/motang006/Qt/6.11.1/gcc_64/lib/libQt6Core.so.6.11.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-rpath-link,/home/motang006/Qt/6.11.1/gcc_64/lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "apppalestradigitale",
+	"nameOnDisk" : "apppalestradigitale",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				4,
+				5,
+				6,
+				8,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				40,
+				41,
+				42,
+				44,
+				45,
+				47,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				7,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				43,
+				46
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/apppalestradigitale_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "dbmanager.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "dbmanager.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 63,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/meta_types/qt6apppalestradigitale_metatypes.json.gen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 64,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/apppalestradigitale_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 68,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 70,
+			"path" : "Main.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 73,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 74,
+			"path" : "qml/LoginPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 75,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 76,
+			"path" : "qml/ClientDashboard.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 77,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 78,
+			"path" : "qml/AdminDashboard.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 79,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 80,
+			"path" : "qml/WorkoutProgramsPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 81,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 82,
+			"path" : "qml/SessionsPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 83,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 84,
+			"path" : "qml/NutritionPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 85,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 86,
+			"path" : "qml/WorkoutProgramDetailPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 87,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "qml/ManageUsersPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 89,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 90,
+			"path" : "qml/ManageWorkoutProgramsPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 91,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 92,
+			"path" : "qml/ManageNutritionPlansPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 93,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 94,
+			"path" : "qml/UserProgressPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 95,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 96,
+			"path" : "qml/RegisterPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 97,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 98,
+			"path" : "qml/NutritionPlanDetailPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 99,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/NutritionPlanDetailPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 100,
+			"path" : "qml/ManageCodesPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 101,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 102,
+			"path" : "qml/SessionDetailPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 103,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 107,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 111,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 113,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qmake_palestradigitale.qrc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 113,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/palestradigitale/qmldir",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 113,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 113,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 113,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/palestradigitale/qml/qmldir",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/apppalestradigitale_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/meta_types/qt6apppalestradigitale_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/apppalestradigitale_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qrc_qmake_palestradigitale.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_Main_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/NutritionPlanDetailPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qrc_apppalestradigitale_raw_qml_0_extra_qmldirs.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/apppalestradigitale_autogen/timestamp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/meta_types/apppalestradigitale_json_file_list.txt.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_1-Debug/meta_types/qt6apppalestradigitale_metatypes.json.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 42,
+			"path" : "/home/motang006/Qt/6.11.1/gcc_64/metatypes/qt6core_metatypes.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 34,
+			"path" : "/home/motang006/Qt/6.11.1/gcc_64/metatypes/qt6qml_metatypes.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 34,
+			"path" : "/home/motang006/Qt/6.11.1/gcc_64/metatypes/qt6network_metatypes.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "/home/motang006/Qt/6.11.1/gcc_64/metatypes/qt6quick_metatypes.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "/home/motang006/Qt/6.11.1/gcc_64/metatypes/qt6gui_metatypes.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "/home/motang006/Qt/6.11.1/gcc_64/metatypes/qt6opengl_metatypes.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"path" : "/home/motang006/Qt/6.11.1/gcc_64/metatypes/qt6sql_metatypes.json",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

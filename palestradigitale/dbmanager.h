@@ -32,6 +32,7 @@ public:
 
     Q_INVOKABLE QVariantList getSessions(int userId);
     Q_INVOKABLE bool logSession(int userId, int programId, const QString &dateTime, int durationMinutes);
+    Q_INVOKABLE bool logDetailedSession(int userId, int programId, const QString &dateTime, int durationMinutes, const QVariantList &results);
 
     Q_INVOKABLE QVariantList getNutritionPlans();
     Q_INVOKABLE QVariantList getNutritionTips(int userId);
@@ -46,10 +47,17 @@ public:
     Q_INVOKABLE bool addWorkoutProgram(const QString &title, const QString &goal,
                                        const QString &difficulty, int durationWeeks,
                                        const QString &description);
+    Q_INVOKABLE bool addWorkoutProgramWithExercises(const QString &title, const QString &goal,
+                                                    const QString &difficulty, int durationWeeks,
+                                                    const QString &description, const QVariantList &exercises);
     Q_INVOKABLE bool deleteWorkoutProgram(int programId);
     Q_INVOKABLE bool updateWorkoutProgram(int programId, const QString &title, const QString &goal,
                                           const QString &difficulty, int durationWeeks,
                                           const QString &description);
+
+    Q_INVOKABLE QVariantList getAllExercises();
+    Q_INVOKABLE QVariantList getProgramExercises(int programId);
+    Q_INVOKABLE QVariantList getSessionResults(int sessionId);
 
     Q_INVOKABLE bool addNutritionPlan(const QString &title, const QString &description);
     Q_INVOKABLE bool deleteNutritionPlan(int planId);

@@ -1,0 +1,41 @@
+[2026-05-31 11:45:02] INIT -> database | connection opened
+[2026-05-31 11:45:46] LOGIN -> users | email: luigi@test.com | type: trainer
+[2026-05-31 11:49:41] INSERT -> workout_programs | title: basic program with 0 exercises
+[2026-05-31 11:49:47] DELETE -> workout_programs | program_id: 4
+[2026-05-31 11:51:05] SHUTDOWN -> database | connection closed
+[2026-05-31 11:56:38] INIT -> database | connection opened
+[2026-05-31 11:56:52] LOGIN -> users | email: luigi@test.com | type: trainer
+[2026-05-31 11:57:10] INSERT -> workout_programs | title: asfasfa with 1 exercises
+[2026-05-31 11:57:15] LOGOUT -> users | user_id: 2
+[2026-05-31 11:57:19] LOGIN -> users | email: mario@test.com | type: client
+[2026-05-31 11:57:39] INSERT -> sessions | Detailed session for user 1 | program 5
+[2026-05-31 11:57:49] LOGOUT -> users | user_id: 1
+[2026-05-31 11:57:52] SHUTDOWN -> database | connection closed
+[2026-05-31 12:01:37] INIT -> database | connection opened
+[2026-05-31 12:01:46] LOGIN -> users | email: luigi@test.com | type: trainer
+[2026-05-31 12:02:28] SHUTDOWN -> database | connection closed
+[2026-05-31 12:03:48] INIT -> database | connection opened
+[2026-05-31 12:03:53] LOGIN -> users | email: luigi@test.com | type: trainer
+[2026-05-31 12:04:29] INSERT -> workout_programs | title: yo with 2 exercises
+[2026-05-31 12:04:44] LOGOUT -> users | user_id: 2
+[2026-05-31 12:04:50] LOGIN -> users | email: mario@test.com | type: client
+[2026-05-31 12:05:32] INSERT -> sessions | Detailed session for user 1 | program 6
+[2026-05-31 12:05:41] SHUTDOWN -> database | connection closed
+[2026-05-31 14:18:57] INIT -> database | connection opened
+[2026-05-31 14:18:57] SHUTDOWN -> database | connection closed
+[2026-05-31 14:21:08] INIT -> database | connection opened
+[2026-05-31 14:21:08] SHUTDOWN -> database | connection closed
+[2026-05-31 14:22:22] INIT -> database | connection opened
+[2026-05-31 14:22:43] LOGIN -> users | email: luigi@test.com | type: trainer
+[2026-05-31 14:23:58] LOGOUT -> users | user_id: 2
+[2026-05-31 14:23:59] SHUTDOWN -> database | connection closed
+[2026-05-31 14:26:03] INIT -> database | connection opened
+[2026-05-31 14:26:14] LOGIN -> users | email: luigi@test.com | type: trainer
+[2026-05-31 14:28:09] LOGOUT -> users | user_id: 2
+[2026-05-31 14:28:14] LOGIN -> users | email: mario@test.com | type: client
+[2026-05-31 14:29:16] LOGOUT -> users | user_id: 1
+[2026-05-31 14:29:22] LOGIN -> users | email: luigi@test.com | type: trainer
+[2026-05-31 14:30:39] SHUTDOWN -> database | connection closed
+[2026-05-31 14:32:04] INIT -> database | connection opened
+[2026-05-31 14:32:13] LOGIN -> users | email: luigi@test.com | type: trainer
+[2026-05-31 14:32:27] SHUTDOWN -> database | connection closed

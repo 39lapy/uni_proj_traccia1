@@ -1,0 +1,15 @@
+-rootPath
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale
+-cmake-output
+-output-file
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/.qt/qml_imports/apppalestradigitale_build.cmake
+-importPath
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug
+-importPath
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/palestradigitale
+-importPath
+/home/motang006/Qt/6.11.1/gcc_64/qml
+-qrcFiles
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qmake_palestradigitale.qrc
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc

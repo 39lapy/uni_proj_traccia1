@@ -1,0 +1,16 @@
+-I
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug
+-I
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/palestradigitale
+-I
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug
+-I
+/home/motang006/Qt/6.11.1/gcc_64/qml
+--resource
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/.qt/rcc/qmake_palestradigitale.qrc
+--resource
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/.qt/rcc/apppalestradigitale_raw_qml_0.qrc
+--resource
+/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/.qt/rcc/apppalestradigitale_raw_qml_0_extra_qmldirs.qrc
+--module
+palestradigitale

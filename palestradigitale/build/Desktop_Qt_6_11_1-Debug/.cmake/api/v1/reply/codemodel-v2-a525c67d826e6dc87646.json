@@ -1,0 +1,223 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-5ff0c0f86f6a84490401.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "palestradigitale",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-37d599532e654d314b0e.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-c35daa7d2a70f715209f.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-fcb241a24039824a78e5.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-f4ecab288b0e7b2249e7.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-163c0f69ce39c237defd.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale-Debug-00d16d078f4e9069dc80.json",
+					"name" : "apppalestradigitale",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_autogen-Debug-ec5f2ff4ba339cab5168.json",
+					"name" : "apppalestradigitale_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_autogen_timestamp_deps-Debug-994920000d4a23e25443.json",
+					"name" : "apppalestradigitale_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_copy_qml-Debug-ec31b6b2ae84fbfecaea.json",
+					"name" : "apppalestradigitale_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_copy_res-Debug-929bc207c1bcba42cdda.json",
+					"name" : "apppalestradigitale_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_qmlimportscan-Debug-256a24c1f416c36bb92b.json",
+					"name" : "apppalestradigitale_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_qmllint-Debug-659c68379ef0ad89a7ed.json",
+					"name" : "apppalestradigitale_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_qmllint_json-Debug-0afab293fac025d045c8.json",
+					"name" : "apppalestradigitale_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_qmllint_module-Debug-5fcb12d31e740cc4256c.json",
+					"name" : "apppalestradigitale_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apppalestradigitale_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apppalestradigitale_qmltyperegistration-Debug-317e14ea3e218242830a.json",
+					"name" : "apppalestradigitale_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clean_qml_context_properties::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clean_qml_context_properties-Debug-261c1e4e056ef12235d7.json",
+					"name" : "clean_qml_context_properties",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dump_qml_context_properties::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dump_qml_context_properties-Debug-f83d1aece9ca9f13dada.json",
+					"name" : "dump_qml_context_properties",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-Debug-5d0d14c46bf8ac80a76e.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_apppalestradigitale_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_apppalestradigitale_aotstats_target-Debug-032a2bf46ea2b71a9517.json",
+					"name" : "module_apppalestradigitale_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug",
+		"source" : "/home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

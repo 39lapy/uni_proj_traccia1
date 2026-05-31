@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_apppalestradigitale_FILE /home/motang006/Desktop/TIPREGOFUNZIONA/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_1-Debug/apppalestradigitale)
+set(__QT_DEPLOY_TARGET_apppalestradigitale_TYPE EXECUTABLE)

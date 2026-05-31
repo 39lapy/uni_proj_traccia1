@@ -1,0 +1,600 @@
+{
+    "classes": [
+        {
+            "className": "DbManager",
+            "lineNumber": 10,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "email",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "password",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "lineNumber": 19,
+                    "name": "login",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "firstName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "lastName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "email",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "password",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "userType",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "lineNumber": 20,
+                    "name": "registerUser",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "lineNumber": 23,
+                    "name": "logout",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "isConst": true,
+                    "lineNumber": 25,
+                    "name": "currentUserType",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "isConst": true,
+                    "lineNumber": 26,
+                    "name": "currentUserId",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "isConst": true,
+                    "lineNumber": 27,
+                    "name": "currentUserName",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "lineNumber": 29,
+                    "name": "getWorkoutPrograms",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "difficulty",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "lineNumber": 30,
+                    "name": "getWorkoutProgramsByDifficulty",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "goal",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 8,
+                    "lineNumber": 31,
+                    "name": "getWorkoutProgramsByGoal",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 9,
+                    "lineNumber": 33,
+                    "name": "getSessions",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "programId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dateTime",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "durationMinutes",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 10,
+                    "lineNumber": 34,
+                    "name": "logSession",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "programId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dateTime",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "durationMinutes",
+                            "type": "int"
+                        },
+                        {
+                            "name": "results",
+                            "type": "QVariantList"
+                        }
+                    ],
+                    "index": 11,
+                    "lineNumber": 35,
+                    "name": "logDetailedSession",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "lineNumber": 37,
+                    "name": "getNutritionPlans",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 13,
+                    "lineNumber": 38,
+                    "name": "getNutritionTips",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 14,
+                    "lineNumber": 40,
+                    "name": "getAllUsers",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 15,
+                    "lineNumber": 41,
+                    "name": "deleteUser",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "lineNumber": 42,
+                    "name": "getClients",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 17,
+                    "lineNumber": 43,
+                    "name": "getTrainers",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "trainerId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "clientId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "startDate",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 18,
+                    "lineNumber": 44,
+                    "name": "assignTrainer",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 19,
+                    "lineNumber": 45,
+                    "name": "getAssignments",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "goal",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "difficulty",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "durationWeeks",
+                            "type": "int"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 20,
+                    "lineNumber": 47,
+                    "name": "addWorkoutProgram",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "goal",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "difficulty",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "durationWeeks",
+                            "type": "int"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "exercises",
+                            "type": "QVariantList"
+                        }
+                    ],
+                    "index": 21,
+                    "lineNumber": 50,
+                    "name": "addWorkoutProgramWithExercises",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "programId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 22,
+                    "lineNumber": 53,
+                    "name": "deleteWorkoutProgram",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "programId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "goal",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "difficulty",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "durationWeeks",
+                            "type": "int"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 23,
+                    "lineNumber": 54,
+                    "name": "updateWorkoutProgram",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 24,
+                    "lineNumber": 58,
+                    "name": "getAllExercises",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "programId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 25,
+                    "lineNumber": 59,
+                    "name": "getProgramExercises",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "sessionId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 26,
+                    "lineNumber": 60,
+                    "name": "getSessionResults",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 27,
+                    "lineNumber": 62,
+                    "name": "addNutritionPlan",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "planId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 28,
+                    "lineNumber": 63,
+                    "name": "deleteNutritionPlan",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "planId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "date",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "content",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 29,
+                    "lineNumber": 64,
+                    "name": "addNutritionTip",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "tipId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 30,
+                    "lineNumber": 65,
+                    "name": "deleteNutritionTip",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 31,
+                    "lineNumber": 67,
+                    "name": "getUserProgress",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 32,
+                    "lineNumber": 68,
+                    "name": "getFeedbackByUser",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "role",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 33,
+                    "lineNumber": 70,
+                    "name": "generateRegistrationCode",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "code",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "role",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 34,
+                    "lineNumber": 71,
+                    "name": "validateRegistrationCode",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "code",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 35,
+                    "lineNumber": 72,
+                    "name": "markCodeAsUsed",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 36,
+                    "lineNumber": 73,
+                    "name": "getRegistrationCodes",
+                    "returnType": "QVariantList"
+                },
+                {
+                    "access": "public",
+                    "index": 37,
+                    "lineNumber": 75,
+                    "name": "getGoals",
+                    "returnType": "QStringList"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "userId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "programId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "planId",
+                            "type": "int"
+                        },
+                        {
+                            "name": "rating",
+                            "type": "int"
+                        },
+                        {
+                            "name": "comment",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 38,
+                    "lineNumber": 77,
+                    "name": "addFeedback",
+                    "returnType": "bool"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "DbManager",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "dbmanager.h",
+    "outputRevision": 69
+}
