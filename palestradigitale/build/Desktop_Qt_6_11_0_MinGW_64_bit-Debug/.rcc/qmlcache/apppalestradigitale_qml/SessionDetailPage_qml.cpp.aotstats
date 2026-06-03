@@ -10,23 +10,47 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "session",
-                            "line": 6,
+                            "line": 7,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "program",
+                            "line": 9,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "exercises",
+                            "line": 10,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         },
                         {
                             "codegenResult": 2,
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 11,
+                            "line": 15,
                             "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 1000,
+                            "functionName": "onCompleted",
+                            "line": 23,
+                            "message": "Cannot load property length from (component in C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionDetailPage.qml)::exercises with type QVariant."
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 16,
+                            "line": 41,
                             "message": ""
                         },
                         {
@@ -34,100 +58,36 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 21,
-                            "message": "Cannot access value for name session"
+                            "line": 46,
+                            "message": "Cannot access value for name isLogging"
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 24,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 25,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 28,
+                            "line": 50,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 19,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 57,
+                            "message": "Cannot access value for name isLogging"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 31,
+                            "line": 61,
                             "message": "Cannot access value for name session"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 19,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 37,
-                            "message": "Cannot access value for name session"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 19,
-                            "durationMicroseconds": 0,
-                            "functionName": "text",
-                            "line": 43,
-                            "message": "Cannot access value for name session"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 45,
-                            "message": "Cannot access value for name session"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 48,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 52,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 55,
-                            "message": "Cannot access value for name session"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "centerIn",
-                            "line": 58,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
+                            "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "text",
                             "line": 62,
@@ -135,10 +95,26 @@
                         },
                         {
                             "codegenResult": 0,
-                            "column": 47,
+                            "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 65,
+                            "functionName": "width",
+                            "line": 67,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "model",
+                            "line": 70,
+                            "message": "Cannot access value for name session"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 72,
                             "message": ""
                         },
                         {
@@ -146,16 +122,104 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 69,
-                            "message": "Cannot access value for name session"
+                            "line": 73,
+                            "message": "Cannot access value for name modelData"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 82,
+                            "message": "Cannot access value for name isLogging"
                         },
                         {
                             "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "model",
+                            "line": 92,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 95,
+                            "message": "Cannot access value for name logList"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 100,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 104,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 111,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 44,
+                            "durationMicroseconds": 0,
+                            "functionName": "onTextChanged",
+                            "line": 112,
+                            "message": "Could not find signal \"textChanged\"."
+                        },
+                        {
+                            "codegenResult": 2,
                             "column": 47,
                             "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 72,
-                            "message": ""
+                            "functionName": "inputMethodHints",
+                            "line": 113,
+                            "message": "Could not find property \"inputMethodHints\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 118,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 44,
+                            "durationMicroseconds": 0,
+                            "functionName": "onTextChanged",
+                            "line": 119,
+                            "message": "Could not find signal \"textChanged\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 47,
+                            "durationMicroseconds": 0,
+                            "functionName": "inputMethodHints",
+                            "line": 120,
+                            "message": "Could not find property \"inputMethodHints\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 130,
+                            "message": "Could not find signal \"clicked\"."
                         }
                     ],
                     "filePath": "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionDetailPage.qml"

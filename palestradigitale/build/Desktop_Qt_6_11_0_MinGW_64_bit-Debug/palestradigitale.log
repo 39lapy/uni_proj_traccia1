@@ -29,3 +29,9 @@
 [2026-05-22 11:24:14] INIT -> database | connection opened
 [2026-05-22 11:25:20] LOGIN -> users | email: mario@test.com | type: client
 [2026-05-22 11:27:03] SHUTDOWN -> database | connection closed
+[2026-06-03 11:01:59] INIT -> database | connection opened
+[2026-06-03 11:02:09] LOGIN -> users | email: admin | type: administrator
+[2026-06-03 11:02:42] LOGOUT -> users | user_id: 3
+[2026-06-03 11:02:58] LOGIN -> users | email: porcacciodeddio@test.com | type: trainer
+[2026-06-03 11:05:34] LOGOUT -> users | user_id: 4
+[2026-06-03 11:05:39] SHUTDOWN -> database | connection closed

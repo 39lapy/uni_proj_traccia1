@@ -2,16 +2,14 @@ import QtQuick
 import QtQuick.Controls
 
 Page {
-    title: "Le mie Sessioni"
-
     property StackView stackView
 
-        header: ToolBar {
-            ToolButton {
-                text: "← Indietro"
-                onClicked: stackView.pop()
-            }
+    header: ToolBar {
+        ToolButton {
+            text: "← Indietro"
+            onClicked: stackView.pop()
         }
+    }
 
     Column {
         anchors.fill: parent
@@ -53,18 +51,14 @@ Page {
                     }
 
                     Button {
-                        text: "Registra"
+                        text: "Registra (Dettagliato)"
                         onClicked: {
-                            var program = db.getWorkoutPrograms()[programPicker.currentIndex]
-                            var now = new Date().toISOString().replace("T", " ").substring(0, 19)
-                            var ok = db.logSession(db.currentUserId(),
-                                                   program.program_id,
-                                                   now,
-                                                   parseInt(durationField.text) || 0)
-                            if (ok) {
-                                sessionList.model = db.getSessions(db.currentUserId())
-                                durationField.text = ""
-                            }
+                            var prog = db.getWorkoutPrograms()[programPicker.currentIndex]
+                            stackView.push(sessionDetailPage, { 
+                                isLogging: true, 
+                                program: prog,
+                                exercises: db.getProgramExercises(prog.program_id)
+                            })
                         }
                     }
                 }

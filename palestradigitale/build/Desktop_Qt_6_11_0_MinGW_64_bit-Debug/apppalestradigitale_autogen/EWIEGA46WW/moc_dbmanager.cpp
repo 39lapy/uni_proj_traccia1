@@ -63,6 +63,8 @@ template <> constexpr inline auto DbManager::qt_create_metaobjectdata<qt_meta_ta
         "programId",
         "dateTime",
         "durationMinutes",
+        "logDetailedSession",
+        "results",
         "getNutritionPlans",
         "getNutritionTips",
         "getAllUsers",
@@ -78,8 +80,14 @@ template <> constexpr inline auto DbManager::qt_create_metaobjectdata<qt_meta_ta
         "title",
         "durationWeeks",
         "description",
+        "addWorkoutProgramWithExercises",
+        "exercises",
         "deleteWorkoutProgram",
         "updateWorkoutProgram",
+        "getAllExercises",
+        "getProgramExercises",
+        "getSessionResults",
+        "sessionId",
         "addNutritionPlan",
         "deleteNutritionPlan",
         "planId",
@@ -138,86 +146,106 @@ template <> constexpr inline auto DbManager::qt_create_metaobjectdata<qt_meta_ta
         QtMocHelpers::MethodData<bool(int, int, const QString &, int)>(21, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::Int, 20 }, { QMetaType::Int, 22 }, { QMetaType::QString, 23 }, { QMetaType::Int, 24 },
         }}),
+        // Method 'logDetailedSession'
+        QtMocHelpers::MethodData<bool(int, int, const QString &, int, const QVariantList &)>(25, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 20 }, { QMetaType::Int, 22 }, { QMetaType::QString, 23 }, { QMetaType::Int, 24 },
+            { 0x80000000 | 14, 26 },
+        }}),
         // Method 'getNutritionPlans'
-        QtMocHelpers::MethodData<QVariantList()>(25, 2, QMC::AccessPublic, 0x80000000 | 14),
+        QtMocHelpers::MethodData<QVariantList()>(27, 2, QMC::AccessPublic, 0x80000000 | 14),
         // Method 'getNutritionTips'
-        QtMocHelpers::MethodData<QVariantList(int)>(26, 2, QMC::AccessPublic, 0x80000000 | 14, {{
+        QtMocHelpers::MethodData<QVariantList(int)>(28, 2, QMC::AccessPublic, 0x80000000 | 14, {{
             { QMetaType::Int, 20 },
         }}),
         // Method 'getAllUsers'
-        QtMocHelpers::MethodData<QVariantList()>(27, 2, QMC::AccessPublic, 0x80000000 | 14),
+        QtMocHelpers::MethodData<QVariantList()>(29, 2, QMC::AccessPublic, 0x80000000 | 14),
         // Method 'deleteUser'
-        QtMocHelpers::MethodData<bool(int)>(28, 2, QMC::AccessPublic, QMetaType::Bool, {{
+        QtMocHelpers::MethodData<bool(int)>(30, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::Int, 20 },
         }}),
         // Method 'getClients'
-        QtMocHelpers::MethodData<QVariantList()>(29, 2, QMC::AccessPublic, 0x80000000 | 14),
+        QtMocHelpers::MethodData<QVariantList()>(31, 2, QMC::AccessPublic, 0x80000000 | 14),
         // Method 'getTrainers'
-        QtMocHelpers::MethodData<QVariantList()>(30, 2, QMC::AccessPublic, 0x80000000 | 14),
+        QtMocHelpers::MethodData<QVariantList()>(32, 2, QMC::AccessPublic, 0x80000000 | 14),
         // Method 'assignTrainer'
-        QtMocHelpers::MethodData<bool(int, int, const QString &)>(31, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 32 }, { QMetaType::Int, 33 }, { QMetaType::QString, 34 },
+        QtMocHelpers::MethodData<bool(int, int, const QString &)>(33, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 34 }, { QMetaType::Int, 35 }, { QMetaType::QString, 36 },
         }}),
         // Method 'getAssignments'
-        QtMocHelpers::MethodData<QVariantList()>(35, 2, QMC::AccessPublic, 0x80000000 | 14),
+        QtMocHelpers::MethodData<QVariantList()>(37, 2, QMC::AccessPublic, 0x80000000 | 14),
         // Method 'addWorkoutProgram'
-        QtMocHelpers::MethodData<bool(const QString &, const QString &, const QString &, int, const QString &)>(36, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::QString, 37 }, { QMetaType::QString, 18 }, { QMetaType::QString, 16 }, { QMetaType::Int, 38 },
-            { QMetaType::QString, 39 },
+        QtMocHelpers::MethodData<bool(const QString &, const QString &, const QString &, int, const QString &)>(38, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 39 }, { QMetaType::QString, 18 }, { QMetaType::QString, 16 }, { QMetaType::Int, 40 },
+            { QMetaType::QString, 41 },
+        }}),
+        // Method 'addWorkoutProgramWithExercises'
+        QtMocHelpers::MethodData<bool(const QString &, const QString &, const QString &, int, const QString &, const QVariantList &)>(42, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 39 }, { QMetaType::QString, 18 }, { QMetaType::QString, 16 }, { QMetaType::Int, 40 },
+            { QMetaType::QString, 41 }, { 0x80000000 | 14, 43 },
         }}),
         // Method 'deleteWorkoutProgram'
-        QtMocHelpers::MethodData<bool(int)>(40, 2, QMC::AccessPublic, QMetaType::Bool, {{
+        QtMocHelpers::MethodData<bool(int)>(44, 2, QMC::AccessPublic, QMetaType::Bool, {{
             { QMetaType::Int, 22 },
         }}),
         // Method 'updateWorkoutProgram'
-        QtMocHelpers::MethodData<bool(int, const QString &, const QString &, const QString &, int, const QString &)>(41, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 22 }, { QMetaType::QString, 37 }, { QMetaType::QString, 18 }, { QMetaType::QString, 16 },
-            { QMetaType::Int, 38 }, { QMetaType::QString, 39 },
+        QtMocHelpers::MethodData<bool(int, const QString &, const QString &, const QString &, int, const QString &)>(45, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 22 }, { QMetaType::QString, 39 }, { QMetaType::QString, 18 }, { QMetaType::QString, 16 },
+            { QMetaType::Int, 40 }, { QMetaType::QString, 41 },
         }}),
-        // Method 'addNutritionPlan'
-        QtMocHelpers::MethodData<bool(const QString &, const QString &)>(42, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::QString, 37 }, { QMetaType::QString, 39 },
+        // Method 'getAllExercises'
+        QtMocHelpers::MethodData<QVariantList()>(46, 2, QMC::AccessPublic, 0x80000000 | 14),
+        // Method 'getProgramExercises'
+        QtMocHelpers::MethodData<QVariantList(int)>(47, 2, QMC::AccessPublic, 0x80000000 | 14, {{
+            { QMetaType::Int, 22 },
         }}),
-        // Method 'deleteNutritionPlan'
-        QtMocHelpers::MethodData<bool(int)>(43, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 44 },
-        }}),
-        // Method 'addNutritionTip'
-        QtMocHelpers::MethodData<bool(int, int, const QString &, const QString &)>(45, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 44 }, { QMetaType::Int, 20 }, { QMetaType::QString, 46 }, { QMetaType::QString, 47 },
-        }}),
-        // Method 'deleteNutritionTip'
-        QtMocHelpers::MethodData<bool(int)>(48, 2, QMC::AccessPublic, QMetaType::Bool, {{
+        // Method 'getSessionResults'
+        QtMocHelpers::MethodData<QVariantList(int)>(48, 2, QMC::AccessPublic, 0x80000000 | 14, {{
             { QMetaType::Int, 49 },
         }}),
+        // Method 'addNutritionPlan'
+        QtMocHelpers::MethodData<bool(const QString &, const QString &)>(50, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 39 }, { QMetaType::QString, 41 },
+        }}),
+        // Method 'deleteNutritionPlan'
+        QtMocHelpers::MethodData<bool(int)>(51, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 52 },
+        }}),
+        // Method 'addNutritionTip'
+        QtMocHelpers::MethodData<bool(int, int, const QString &, const QString &)>(53, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 52 }, { QMetaType::Int, 20 }, { QMetaType::QString, 54 }, { QMetaType::QString, 55 },
+        }}),
+        // Method 'deleteNutritionTip'
+        QtMocHelpers::MethodData<bool(int)>(56, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 57 },
+        }}),
         // Method 'getUserProgress'
-        QtMocHelpers::MethodData<QVariantList(int)>(50, 2, QMC::AccessPublic, 0x80000000 | 14, {{
+        QtMocHelpers::MethodData<QVariantList(int)>(58, 2, QMC::AccessPublic, 0x80000000 | 14, {{
             { QMetaType::Int, 20 },
         }}),
         // Method 'getFeedbackByUser'
-        QtMocHelpers::MethodData<QVariantList(int)>(51, 2, QMC::AccessPublic, 0x80000000 | 14, {{
+        QtMocHelpers::MethodData<QVariantList(int)>(59, 2, QMC::AccessPublic, 0x80000000 | 14, {{
             { QMetaType::Int, 20 },
         }}),
         // Method 'generateRegistrationCode'
-        QtMocHelpers::MethodData<QString(const QString &)>(52, 2, QMC::AccessPublic, QMetaType::QString, {{
-            { QMetaType::QString, 53 },
+        QtMocHelpers::MethodData<QString(const QString &)>(60, 2, QMC::AccessPublic, QMetaType::QString, {{
+            { QMetaType::QString, 61 },
         }}),
         // Method 'validateRegistrationCode'
-        QtMocHelpers::MethodData<bool(const QString &, const QString &)>(54, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::QString, 55 }, { QMetaType::QString, 53 },
+        QtMocHelpers::MethodData<bool(const QString &, const QString &)>(62, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 63 }, { QMetaType::QString, 61 },
         }}),
         // Method 'markCodeAsUsed'
-        QtMocHelpers::MethodData<bool(const QString &)>(56, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::QString, 55 },
+        QtMocHelpers::MethodData<bool(const QString &)>(64, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::QString, 63 },
         }}),
         // Method 'getRegistrationCodes'
-        QtMocHelpers::MethodData<QVariantList()>(57, 2, QMC::AccessPublic, 0x80000000 | 14),
+        QtMocHelpers::MethodData<QVariantList()>(65, 2, QMC::AccessPublic, 0x80000000 | 14),
         // Method 'getGoals'
-        QtMocHelpers::MethodData<QStringList()>(58, 2, QMC::AccessPublic, QMetaType::QStringList),
+        QtMocHelpers::MethodData<QStringList()>(66, 2, QMC::AccessPublic, QMetaType::QStringList),
         // Method 'addFeedback'
-        QtMocHelpers::MethodData<bool(int, int, int, int, const QString &)>(59, 2, QMC::AccessPublic, QMetaType::Bool, {{
-            { QMetaType::Int, 20 }, { QMetaType::Int, 22 }, { QMetaType::Int, 44 }, { QMetaType::Int, 60 },
-            { QMetaType::QString, 61 },
+        QtMocHelpers::MethodData<bool(int, int, int, int, const QString &)>(67, 2, QMC::AccessPublic, QMetaType::Bool, {{
+            { QMetaType::Int, 20 }, { QMetaType::Int, 22 }, { QMetaType::Int, 52 }, { QMetaType::Int, 68 },
+            { QMetaType::QString, 69 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -263,51 +291,61 @@ void DbManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
         case 10: { bool _r = _t->logSession((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 11: { QVariantList _r = _t->getNutritionPlans();
+        case 11: { bool _r = _t->logDetailedSession((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QVariantList>>(_a[5])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 12: { QVariantList _r = _t->getNutritionPlans();
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 12: { QVariantList _r = _t->getNutritionTips((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 13: { QVariantList _r = _t->getNutritionTips((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 13: { QVariantList _r = _t->getAllUsers();
+        case 14: { QVariantList _r = _t->getAllUsers();
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 14: { bool _r = _t->deleteUser((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 15: { bool _r = _t->deleteUser((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 15: { QVariantList _r = _t->getClients();
+        case 16: { QVariantList _r = _t->getClients();
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 16: { QVariantList _r = _t->getTrainers();
+        case 17: { QVariantList _r = _t->getTrainers();
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 17: { bool _r = _t->assignTrainer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])));
+        case 18: { bool _r = _t->assignTrainer((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 18: { QVariantList _r = _t->getAssignments();
+        case 19: { QVariantList _r = _t->getAssignments();
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 19: { bool _r = _t->addWorkoutProgram((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
+        case 20: { bool _r = _t->addWorkoutProgram((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 20: { bool _r = _t->deleteWorkoutProgram((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 21: { bool _r = _t->addWorkoutProgramWithExercises((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])),(*reinterpret_cast<std::add_pointer_t<QVariantList>>(_a[6])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 21: { bool _r = _t->updateWorkoutProgram((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[5])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[6])));
+        case 22: { bool _r = _t->deleteWorkoutProgram((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 22: { bool _r = _t->addNutritionPlan((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
+        case 23: { bool _r = _t->updateWorkoutProgram((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[5])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[6])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 23: { bool _r = _t->deleteNutritionPlan((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
-            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 24: { bool _r = _t->addNutritionTip((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])));
-            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 25: { bool _r = _t->deleteNutritionTip((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
-            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 26: { QVariantList _r = _t->getUserProgress((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 24: { QVariantList _r = _t->getAllExercises();
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 27: { QVariantList _r = _t->getFeedbackByUser((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+        case 25: { QVariantList _r = _t->getProgramExercises((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 28: { QString _r = _t->generateRegistrationCode((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
+        case 26: { QVariantList _r = _t->getSessionResults((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 27: { bool _r = _t->addNutritionPlan((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 28: { bool _r = _t->deleteNutritionPlan((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 29: { bool _r = _t->addNutritionTip((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[4])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 30: { bool _r = _t->deleteNutritionTip((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
+        case 31: { QVariantList _r = _t->getUserProgress((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 32: { QVariantList _r = _t->getFeedbackByUser((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
+        case 33: { QString _r = _t->generateRegistrationCode((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast<QString*>(_a[0]) = std::move(_r); }  break;
-        case 29: { bool _r = _t->validateRegistrationCode((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
+        case 34: { bool _r = _t->validateRegistrationCode((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 30: { bool _r = _t->markCodeAsUsed((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
+        case 35: { bool _r = _t->markCodeAsUsed((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
-        case 31: { QVariantList _r = _t->getRegistrationCodes();
+        case 36: { QVariantList _r = _t->getRegistrationCodes();
             if (_a[0]) *reinterpret_cast<QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 32: { QStringList _r = _t->getGoals();
+        case 37: { QStringList _r = _t->getGoals();
             if (_a[0]) *reinterpret_cast<QStringList*>(_a[0]) = std::move(_r); }  break;
-        case 33: { bool _r = _t->addFeedback((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
+        case 38: { bool _r = _t->addFeedback((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[5])));
             if (_a[0]) *reinterpret_cast<bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -333,14 +371,14 @@ int DbManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 34)
+        if (_id < 39)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 34;
+        _id -= 39;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 34)
+        if (_id < 39)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 34;
+        _id -= 39;
     }
     return _id;
 }

@@ -2,8 +2,8 @@ import QtQuick
 import QtQuick.Controls
 
 Page {
-    id: loginPage
-    signal goToRegister
+    id: registerPage
+    property StackView stackView
 
     header: ToolBar {
         ToolButton {
@@ -11,8 +11,6 @@ Page {
             onClicked: stackView.pop()
         }
     }
-
-    property StackView stackView
 
     ScrollView {
         anchors.fill: parent
@@ -75,7 +73,6 @@ Page {
                 model: ["client", "trainer", "nutritionist"]
             }
 
-            // OTP field — only visible for trainer/nutritionist
             Column {
                 width: parent.width
                 spacing: 6
@@ -132,14 +129,8 @@ Page {
                         return
                     }
 
-                    // Validate OTP for trainer/nutritionist
                     if (userTypePicker.currentIndex > 0) {
-                        if (otpField.text === "") {
-                            errorText.text = "Inserisci il codice di autorizzazione"
-                            errorText.visible = true
-                            return
-                        }
-                        if (!db.validateRegistrationCode(otpField.text, userTypePicker.currentText)) {
+                        if (otpField.text === "" || !db.validateRegistrationCode(otpField.text, userTypePicker.currentText)) {
                             errorText.text = "Codice non valido o già utilizzato"
                             errorText.visible = true
                             return
@@ -157,14 +148,6 @@ Page {
                     if (ok) {
                         if (userTypePicker.currentIndex > 0)
                             db.markCodeAsUsed(otpField.text)
-
-                        firstNameField.text = ""
-                        lastNameField.text = ""
-                        emailField.text = ""
-                        passwordField.text = ""
-                        confirmPasswordField.text = ""
-                        otpField.text = ""
-                        userTypePicker.currentIndex = 0
                         successText.visible = true
                     } else {
                         errorText.text = "Errore: email già in uso o dati non validi"

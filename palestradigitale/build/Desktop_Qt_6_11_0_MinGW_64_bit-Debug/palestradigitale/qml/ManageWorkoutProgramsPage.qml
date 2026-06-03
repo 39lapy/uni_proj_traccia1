@@ -89,6 +89,10 @@ Page {
 
             // --- TAB 2: NEW PROGRAM ---
             Item {
+                ListModel {
+                    id: selectedExercisesModel
+                }
+
                 ScrollView {
                     anchors.fill: parent
                     contentWidth: parent.width
@@ -135,6 +139,46 @@ Page {
                             placeholderText: "Descrizione"
                         }
 
+                        Rectangle { width: parent.width - 32; height: 1; color: "#ddd" }
+
+                        Text {
+                            text: "Esercizi"
+                            font.bold: true
+                        }
+
+                        Repeater {
+                            model: selectedExercisesModel
+                            delegate: Rectangle {
+                                width: parent.width - 32
+                                height: 40
+                                color: "#eee"
+                                radius: 4
+                                Row {
+                                    anchors.fill: parent
+                                    anchors.margins: 8
+                                    spacing: 8
+                                    Text {
+                                        text: model.name + " (" + model.sets + "x" + model.reps + ")"
+                                        verticalAlignment: Text.AlignVCenter
+                                        width: parent.width - 40
+                                    }
+                                    Button {
+                                        text: "✕"
+                                        width: 30; height: 24
+                                        onClicked: selectedExercisesModel.remove(index)
+                                    }
+                                }
+                            }
+                        }
+
+                        Button {
+                            text: "+ Aggiungi Esercizio"
+                            width: parent.width - 32
+                            onClicked: exerciseDialog.open()
+                        }
+
+                        Rectangle { width: parent.width - 32; height: 1; color: "#ddd" }
+
                         Text {
                             id: errorText
                             color: "red"
@@ -158,18 +202,32 @@ Page {
                                     successText.visible = false
                                     return
                                 }
-                                var ok = db.addWorkoutProgram(
+                                
+                                var exList = []
+                                for (var i = 0; i < selectedExercisesModel.count; i++) {
+                                    var item = selectedExercisesModel.get(i)
+                                    exList.push({
+                                        "exercise_id": item.exercise_id,
+                                        "sets": item.sets,
+                                        "reps": item.reps,
+                                        "rest_seconds": item.rest_seconds
+                                    })
+                                }
+
+                                var ok = db.addWorkoutProgramWithExercises(
                                     titleField.text,
                                     goalField.text,
                                     difficultyPicker.currentText,
                                     parseInt(durationField.text) || 1,
-                                    descField.text
+                                    descField.text,
+                                    exList
                                 )
                                 if (ok) {
                                     titleField.text = ""
                                     goalField.text = ""
                                     durationField.text = ""
                                     descField.text = ""
+                                    selectedExercisesModel.clear()
                                     difficultyPicker.currentIndex = 0
                                     errorText.visible = false
                                     successText.visible = true
@@ -181,6 +239,63 @@ Page {
                                 }
                             }
                         }
+                    }
+                }
+
+                Dialog {
+                    id: exerciseDialog
+                    title: "Aggiungi Esercizio"
+                    x: (parent.width - width) / 2
+                    y: (parent.height - height) / 2
+                    width: 300
+                    standardButtons: Dialog.Ok | Dialog.Cancel
+
+                    Column {
+                        spacing: 12
+                        width: parent.width
+
+                        ComboBox {
+                            id: exercisePicker
+                            width: parent.width
+                            textRole: "name"
+                            model: db.getAllExercises()
+                        }
+
+                        Row {
+                            spacing: 10
+                            TextField {
+                                id: setsField
+                                placeholderText: "Sets"
+                                width: 135
+                                inputMethodHints: Qt.ImhDigitsOnly
+                            }
+                            TextField {
+                                id: repsField
+                                placeholderText: "Reps"
+                                width: 135
+                                inputMethodHints: Qt.ImhDigitsOnly
+                            }
+                        }
+
+                        TextField {
+                            id: restField
+                            placeholderText: "Recupero (sec)"
+                            width: parent.width
+                            inputMethodHints: Qt.ImhDigitsOnly
+                        }
+                    }
+
+                    onAccepted: {
+                        selectedExercisesModel.append({
+                            "exercise_id": exercisePicker.model[exercisePicker.currentIndex].exercise_id,
+                            "name": exercisePicker.model[exercisePicker.currentIndex].name,
+                            "sets": parseInt(setsField.text) || 3,
+                            "reps": parseInt(repsField.text) || 10,
+                            "rest_seconds": parseInt(restField.text) || 60
+                        })
+                        setsField.text = ""
+                        repsField.text = ""
+                        restField.text = ""
                     }
                 }
             }

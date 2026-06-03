@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 2000,
+                            "durationMicroseconds": 1000,
                             "functionName": "applyFilters",
                             "line": 14,
                             "message": "Cannot retrieve a non-object type by ID: difficultyFilter"
