@@ -97,8 +97,24 @@
                             "codegenResult": 2,
                             "column": 24,
                             "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 60,
+                            "message": "Cannot retrieve a non-object type by ID: passwordField"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 59,
+                            "line": 61,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 66,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -106,7 +122,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "echoMode",
-                            "line": 61,
+                            "line": 68,
                             "message": "Could not find property \"echoMode\"."
                         },
                         {
@@ -114,7 +130,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 72,
+                            "line": 79,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -122,7 +138,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 73,
+                            "line": 80,
                             "message": "Could not find property \"model\"."
                         },
                         {
@@ -130,7 +146,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 77,
+                            "line": 84,
                             "message": ""
                         },
                         {
@@ -138,7 +154,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 79,
+                            "line": 86,
                             "message": "Cannot retrieve a non-object type by ID: userTypePicker"
                         },
                         {
@@ -146,7 +162,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 89,
+                            "line": 96,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -154,7 +170,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "inputMethodHints",
-                            "line": 91,
+                            "line": 98,
                             "message": "Could not find property \"inputMethodHints\"."
                         },
                         {
@@ -162,7 +178,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 99,
+                            "line": 106,
                             "message": ""
                         },
                         {
@@ -170,7 +186,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 100,
+                            "line": 107,
                             "message": ""
                         },
                         {
@@ -178,7 +194,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 108,
+                            "line": 115,
                             "message": ""
                         },
                         {
@@ -186,7 +202,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 109,
+                            "line": 116,
                             "message": ""
                         },
                         {
@@ -194,7 +210,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 114,
+                            "line": 121,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -202,7 +218,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 115,
+                            "line": 122,
                             "message": "Could not find signal \"clicked\"."
                         }
                     ],

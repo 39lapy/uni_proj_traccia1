@@ -95,9 +95,9 @@ clean: CMakeFiles/apppalestradigitale_autogen.dir/clean
 # Target rules for target CMakeFiles/apppalestradigitale.dir
 
 # All Build rule for target.
+CMakeFiles/apppalestradigitale.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
 CMakeFiles/apppalestradigitale.dir/all: CMakeFiles/apppalestradigitale_copy_qml.dir/all
 CMakeFiles/apppalestradigitale.dir/all: CMakeFiles/apppalestradigitale_copy_res.dir/all
-CMakeFiles/apppalestradigitale.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
 CMakeFiles/apppalestradigitale.dir/all: CMakeFiles/apppalestradigitale_qmlimportscan.dir/all
 CMakeFiles/apppalestradigitale.dir/all: CMakeFiles/apppalestradigitale_autogen.dir/all
 CMakeFiles/apppalestradigitale.dir/all: CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir/all
@@ -544,9 +544,9 @@ CMakeFiles/apppalestradigitale_qmlimportscan.dir/clean:
 # Target rules for target CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir
 
 # All Build rule for target.
+CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
 CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir/all: CMakeFiles/apppalestradigitale_copy_qml.dir/all
 CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir/all: CMakeFiles/apppalestradigitale_copy_res.dir/all
-CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir/all: CMakeFiles/generate_qmlls_build_ini_file.dir/all
 CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir/all: CMakeFiles/apppalestradigitale_qmlimportscan.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale_autogen_timestamp_deps.dir\build.make CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\apppalestradigitale_autogen_timestamp_deps.dir\build.make CMakeFiles/apppalestradigitale_autogen_timestamp_deps.dir/build

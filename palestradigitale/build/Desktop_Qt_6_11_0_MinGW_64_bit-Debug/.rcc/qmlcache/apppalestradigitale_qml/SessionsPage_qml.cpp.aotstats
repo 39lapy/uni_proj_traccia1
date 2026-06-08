@@ -90,7 +90,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 79,
+                            "line": 93,
                             "message": ""
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 80,
+                            "line": 94,
                             "message": ""
                         },
                         {
@@ -106,7 +106,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 82,
+                            "line": 96,
                             "message": "Cannot access value for name db"
                         },
                         {
@@ -114,7 +114,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 86,
+                            "line": 100,
                             "message": "Cannot access value for name sessionList"
                         },
                         {
@@ -122,7 +122,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 89,
+                            "line": 103,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -130,7 +130,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 94,
+                            "line": 108,
                             "message": "Cannot access value for name stackView"
                         },
                         {
@@ -138,7 +138,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 93,
+                            "line": 107,
                             "message": ""
                         },
                         {
@@ -146,7 +146,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 99,
+                            "line": 113,
                             "message": ""
                         },
                         {
@@ -154,7 +154,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 104,
+                            "line": 118,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -162,7 +162,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 110,
+                            "line": 124,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -170,7 +170,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 116,
+                            "line": 130,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -178,7 +178,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 118,
+                            "line": 132,
                             "message": "Cannot access value for name modelData"
                         }
                     ],

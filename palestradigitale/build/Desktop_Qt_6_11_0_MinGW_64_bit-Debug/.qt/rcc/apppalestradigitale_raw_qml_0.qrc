@@ -2,20 +2,20 @@
   <qresource prefix="/qt/qml/palestradigitale/">
     <file alias="Main.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/Main.qml</file>
     <file alias="qml/LoginPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/LoginPage.qml</file>
+    <file alias="qml/RegisterPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/RegisterPage.qml</file>
     <file alias="qml/ClientDashboard.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ClientDashboard.qml</file>
     <file alias="qml/AdminDashboard.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/AdminDashboard.qml</file>
     <file alias="qml/WorkoutProgramsPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramsPage.qml</file>
-    <file alias="qml/SessionsPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml</file>
-    <file alias="qml/NutritionPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml</file>
     <file alias="qml/WorkoutProgramDetailPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramDetailPage.qml</file>
+    <file alias="qml/SessionsPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml</file>
+    <file alias="qml/SessionDetailPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionDetailPage.qml</file>
+    <file alias="qml/NutritionPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml</file>
+    <file alias="qml/NutritionPlanDetailPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPlanDetailPage.qml</file>
     <file alias="qml/ManageUsersPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ManageUsersPage.qml</file>
     <file alias="qml/ManageWorkoutProgramsPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ManageWorkoutProgramsPage.qml</file>
     <file alias="qml/ManageNutritionPlansPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ManageNutritionPlansPage.qml</file>
-    <file alias="qml/UserProgressPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/UserProgressPage.qml</file>
-    <file alias="qml/RegisterPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/RegisterPage.qml</file>
-    <file alias="qml/NutritionPlanDetailPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPlanDetailPage.qml</file>
     <file alias="qml/ManageCodesPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/ManageCodesPage.qml</file>
-    <file alias="qml/SessionDetailPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/SessionDetailPage.qml</file>
+    <file alias="qml/UserProgressPage.qml">C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/qml/UserProgressPage.qml</file>
   </qresource>
 </RCC>
 

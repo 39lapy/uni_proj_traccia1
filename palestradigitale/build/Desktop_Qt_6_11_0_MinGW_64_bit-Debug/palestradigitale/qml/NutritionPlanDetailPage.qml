@@ -66,7 +66,7 @@ Page {
                 width: parent.width - 32
                 height: 200
                 clip: true
-                model: db.getNutritionTips(db.currentUserId())
+                model: db.getNutritionTipsByPlan(plan.plan_id, db.currentUserId())
                 spacing: 6
 
                 delegate: Rectangle {

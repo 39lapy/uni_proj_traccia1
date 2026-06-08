@@ -134,7 +134,7 @@ Page {
                             spacing: 4
 
                             Text {
-                                text: modelData.program !== "" ? modelData.program : modelData.plan
+                                text: modelData.program ? modelData.program : (modelData.plan ? modelData.plan : "N/D")
                                 font.pixelSize: 15
                                 font.bold: true
                             }

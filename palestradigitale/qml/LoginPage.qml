@@ -42,14 +42,15 @@ Page {
             text: "Login"
             width: parent.width
             onClicked: {
-                if (db.login(emailField.text, passwordField.text)) {
-                    loginSuccess(db.currentUserType())
-                } else {
-                    errorText.text = "Email o password errati"
-                    errorText.visible = true
+
+                    if (db.login(emailField.text, passwordField.text)) {
+                        loginSuccess(db.currentUserType())
+                    } else {
+                        errorText.text = "Email o password errati"
+                        errorText.visible = true
+                    }
                 }
             }
-        }
 
         Button {
             text: "Non hai un account? Registrati"

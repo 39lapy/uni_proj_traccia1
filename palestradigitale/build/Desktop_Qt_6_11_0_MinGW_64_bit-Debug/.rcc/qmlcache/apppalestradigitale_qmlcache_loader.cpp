@@ -19,6 +19,13 @@ namespace _qt_qml_palestradigitale_qml_LoginPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_palestradigitale_qml_RegisterPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _qt_qml_palestradigitale_qml_ClientDashboard_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -40,7 +47,21 @@ namespace _qt_qml_palestradigitale_qml_WorkoutProgramsPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_palestradigitale_qml_WorkoutProgramDetailPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _qt_qml_palestradigitale_qml_SessionsPage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_palestradigitale_qml_SessionDetailPage_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -54,7 +75,7 @@ namespace _qt_qml_palestradigitale_qml_NutritionPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_palestradigitale_qml_WorkoutProgramDetailPage_qml { 
+namespace _qt_qml_palestradigitale_qml_NutritionPlanDetailPage_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -82,27 +103,6 @@ namespace _qt_qml_palestradigitale_qml_ManageNutritionPlansPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_palestradigitale_qml_UserProgressPage_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
-namespace _qt_qml_palestradigitale_qml_RegisterPage_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
-namespace _qt_qml_palestradigitale_qml_NutritionPlanDetailPage_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
 namespace _qt_qml_palestradigitale_qml_ManageCodesPage_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -110,7 +110,7 @@ namespace _qt_qml_palestradigitale_qml_ManageCodesPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_palestradigitale_qml_SessionDetailPage_qml { 
+namespace _qt_qml_palestradigitale_qml_UserProgressPage_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -133,20 +133,20 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_Main_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/LoginPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_LoginPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/RegisterPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_RegisterPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/ClientDashboard.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_ClientDashboard_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/AdminDashboard.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_AdminDashboard_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/WorkoutProgramsPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_WorkoutProgramsPage_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/SessionsPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_SessionsPage_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/NutritionPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_NutritionPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/WorkoutProgramDetailPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_WorkoutProgramDetailPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/SessionsPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_SessionsPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/SessionDetailPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_SessionDetailPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/NutritionPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_NutritionPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/NutritionPlanDetailPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_NutritionPlanDetailPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/ManageUsersPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_ManageUsersPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/ManageWorkoutProgramsPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_ManageWorkoutProgramsPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/ManageNutritionPlansPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_ManageNutritionPlansPage_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/UserProgressPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_UserProgressPage_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/RegisterPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_RegisterPage_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/NutritionPlanDetailPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_NutritionPlanDetailPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/ManageCodesPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_ManageCodesPage_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/SessionDetailPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_SessionDetailPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/palestradigitale/qml/UserProgressPage.qml"), &QmlCacheGeneratedCode::_qt_qml_palestradigitale_qml_UserProgressPage_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

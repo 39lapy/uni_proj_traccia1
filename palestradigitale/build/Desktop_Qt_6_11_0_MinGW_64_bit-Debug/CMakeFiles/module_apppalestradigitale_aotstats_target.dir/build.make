@@ -69,20 +69,20 @@ CMakeFiles/module_apppalestradigitale_aotstats_target: .rcc/qmlcache/module_appp
 
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_Main_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/LoginPage_qml.cpp.aotstats
+.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/ClientDashboard_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/AdminDashboard_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramsPage_qml.cpp.aotstats
-.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.aotstats
-.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/WorkoutProgramDetailPage_qml.cpp.aotstats
+.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/SessionsPage_qml.cpp.aotstats
+.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.aotstats
+.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/NutritionPage_qml.cpp.aotstats
+.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/NutritionPlanDetailPage_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/ManageUsersPage_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/ManageWorkoutProgramsPage_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/ManageNutritionPlansPage_qml.cpp.aotstats
-.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.aotstats
-.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/RegisterPage_qml.cpp.aotstats
-.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/NutritionPlanDetailPage_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/ManageCodesPage_qml.cpp.aotstats
-.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/SessionDetailPage_qml.cpp.aotstats
+.rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/apppalestradigitale_qml/UserProgressPage_qml.cpp.aotstats
 .rcc/qmlcache/module_apppalestradigitale.aotstats: .rcc/qmlcache/module_apppalestradigitale.aotstatslist
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/module_apppalestradigitale.aotstats"
 	call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.11.0/mingw_64/bin/qmlaotstats.exe aggregate "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/module_apppalestradigitale.aotstatslist" "C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmlcache/module_apppalestradigitale.aotstats"

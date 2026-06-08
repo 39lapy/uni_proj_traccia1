@@ -7,7 +7,7 @@ Page {
     property var session: ({})
     property bool isLogging: false
     property var program: ({})
-    property var exercises: []
+    property var exercises: null
 
     header: ToolBar {
         ToolButton {
@@ -21,7 +21,7 @@ Page {
     }
 
     Component.onCompleted: {
-        if (isLogging) {
+        if (isLogging && exercises) {
             for (var i = 0; i < exercises.length; i++) {
                 var ex = exercises[i]
                 for (var s = 1; s <= ex.sets; s++) {

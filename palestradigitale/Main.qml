@@ -20,7 +20,7 @@ ApplicationWindow {
             onLoginSuccess: function(userType) {
                 if (userType === "client") {
                     stack.push(clientDashboard)
-                } else {
+                } else if (userType === "administrator" || userType === "trainer" || userType === "nutritionist") {
                     stack.push(adminDashboard)
                 }
             }

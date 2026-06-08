@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Controls
 
 Page {
-    id: registerPage
+    id: regPage
     property StackView stackView
 
     header: ToolBar {
@@ -52,6 +52,13 @@ Page {
                 width: parent.width - 48
                 placeholderText: "Password"
                 echoMode: TextInput.Password
+            }
+
+            Text {
+                text: "Minimo 8 caratteri"
+                font.pixelSize: 11
+                color: passwordField.text.length > 0 && passwordField.text.length < 8 ? "red" : "#aaa"
+                width: parent.width - 48
             }
 
             TextField {
@@ -116,9 +123,17 @@ Page {
                     errorText.visible = false
                     successText.visible = false
 
+
+
                     if (firstNameField.text === "" || lastNameField.text === "" ||
                         emailField.text === "" || passwordField.text === "") {
                         errorText.text = "Compila tutti i campi obbligatori"
+                        errorText.visible = true
+                        return
+                    }
+
+                    if (passwordField.text.length < 8) {
+                        errorText.text = "La password deve contenere almeno 8 caratteri"
                         errorText.visible = true
                         return
                     }
@@ -127,14 +142,6 @@ Page {
                         errorText.text = "Le password non coincidono"
                         errorText.visible = true
                         return
-                    }
-
-                    if (userTypePicker.currentIndex > 0) {
-                        if (otpField.text === "" || !db.validateRegistrationCode(otpField.text, userTypePicker.currentText)) {
-                            errorText.text = "Codice non valido o già utilizzato"
-                            errorText.visible = true
-                            return
-                        }
                     }
 
                     var ok = db.registerUser(

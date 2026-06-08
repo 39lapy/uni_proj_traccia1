@@ -3,6 +3,7 @@
 #include <QSqlError>
 #include <QDebug>
 #include <QRandomGenerator>
+#include <QCryptographicHash>
 
 DbManager::DbManager(QObject *parent) : QObject(parent) {}
 
@@ -153,13 +154,20 @@ void DbManager::logDbChange(const QString &operation, const QString &table, cons
     }
 }
 
+QString DbManager::hashPassword(const QString &password) {
+    return QString(QCryptographicHash::hash(
+                       password.toUtf8(),
+                       QCryptographicHash::Sha256
+                       ).toHex());
+}
+
 bool DbManager::login(const QString &email, const QString &password) {
     QSqlQuery query;
     query.prepare("SELECT user_id, first_name, user_type, password_hash FROM users WHERE email = :email");
     query.bindValue(":email", email);
     query.exec();
     if (query.next()) {
-        if (query.value("password_hash").toString() == password) {
+        if (query.value("password_hash").toString() == hashPassword(password)) {
             m_currentUserId = query.value("user_id").toInt();
             m_currentUserName = query.value("first_name").toString();
             m_currentUserType = query.value("user_type").toString();
@@ -179,7 +187,7 @@ bool DbManager::registerUser(const QString &firstName, const QString &lastName,
     query.bindValue(":first", firstName);
     query.bindValue(":last", lastName);
     query.bindValue(":email", email);
-    query.bindValue(":pass", password);
+    query.bindValue(":pass", hashPassword(password));
     query.bindValue(":type", userType);
     if (query.exec()) {
         logDbChange("INSERT", "users", "email: " + email + " | type: " + userType);
@@ -399,13 +407,23 @@ QVariantList DbManager::getAllUsers() {
 }
 
 bool DbManager::deleteUser(int userId) {
-    QSqlQuery query;
-    query.prepare("DELETE FROM users WHERE user_id = :uid");
-    query.bindValue(":uid", userId);
-    if (query.exec()) {
+    QSqlDatabase::database().transaction();
+
+    QSqlQuery q;
+    // Clean up dependent records first
+    q.prepare("DELETE FROM feedback WHERE user_id = :uid"); q.bindValue(":uid", userId); q.exec();
+    q.prepare("DELETE FROM sessions WHERE user_id = :uid"); q.bindValue(":uid", userId); q.exec();
+    q.prepare("DELETE FROM nutrition_tips WHERE user_id = :uid"); q.bindValue(":uid", userId); q.exec();
+    q.prepare("DELETE FROM assignments WHERE trainer_id = :uid OR client_id = :uid");
+    q.bindValue(":uid", userId); q.exec();
+    q.prepare("DELETE FROM users WHERE user_id = :uid"); q.bindValue(":uid", userId);
+
+    if (q.exec()) {
+        QSqlDatabase::database().commit();
         logDbChange("DELETE", "users", "user_id: " + QString::number(userId));
         return true;
     }
+    QSqlDatabase::database().rollback();
     return false;
 }
 
@@ -493,26 +511,9 @@ bool DbManager::addFeedback(int userId, int programId, int planId, int rating, c
 void DbManager::seedTestData() {
     QSqlQuery check;
 
-    // Helper lambda to insert exercise if not exists
-    auto insertEx = [&](const QString &name, const QString &desc, const QString &cat) {
-        QSqlQuery q;
-        q.prepare("SELECT COUNT(*) FROM exercises WHERE name = :name");
-        q.bindValue(":name", name);
-        q.exec();
-        q.next();
-        if (q.value(0).toInt() == 0) {
-            QSqlQuery ins;
-            ins.prepare("INSERT INTO exercises (name, description, category) VALUES (:name, :desc, :cat)");
-            ins.bindValue(":name", name);
-            ins.bindValue(":desc", desc);
-            ins.bindValue(":cat", cat);
-            ins.exec();
-        }
-    };
-
-    // Users seeding (existing logic)
     check.exec("SELECT COUNT(*) FROM users");
     check.next();
+
     if (check.value(0).toInt() == 0) {
         QSqlQuery query;
         query.prepare("INSERT INTO users (first_name, last_name, email, password_hash, user_type) "
@@ -526,55 +527,128 @@ void DbManager::seedTestData() {
         query.bindValue(":email", "luigi@test.com"); query.bindValue(":pass", "1234");
         query.bindValue(":type", "trainer"); query.exec();
 
-        query.bindValue(":first", "admin"); query.bindValue(":last", "istrator");
+        query.bindValue(":first", "Anna"); query.bindValue(":last", "Bianchi");
+        query.bindValue(":email", "anna@test.com"); query.bindValue(":pass", "1234");
+        query.bindValue(":type", "nutritionist"); query.exec();
+
+        query.bindValue(":first", "Admin"); query.bindValue(":last", "Istrator");
         query.bindValue(":email", "admin"); query.bindValue(":pass", "admin");
         query.bindValue(":type", "administrator"); query.exec();
+
+        query.bindValue(":pass", hashPassword("1234"));   // for test users
+        query.bindValue(":pass", hashPassword("admin"));   // for admin
 
         qDebug() << "Users seeded.";
     }
 
-    // Workout programs, Nutrition plans, Tips (keep existing logic)
-    // ... skipping for brevity but keeping in file ...
+    check.exec("SELECT COUNT(*) FROM workout_programs");
+    check.next();
+    if (check.value(0).toInt() == 0) {
+        QSqlQuery wp;
+        wp.prepare("INSERT INTO workout_programs (trainer_id, title, goal, difficulty, duration_weeks, description) "
+                   "VALUES (:tid, :title, :goal, :diff, :weeks, :desc)");
 
-    // Exercises - Categorized and expanded
+        wp.bindValue(":tid", 2); wp.bindValue(":title", "Full Body Beginner");
+        wp.bindValue(":goal", "weight loss"); wp.bindValue(":diff", "beginner");
+        wp.bindValue(":weeks", 4); wp.bindValue(":desc", "Programma introduttivo per chi inizia.");
+        wp.exec();
+
+        wp.bindValue(":tid", 2); wp.bindValue(":title", "Strength Builder");
+        wp.bindValue(":goal", "muscle gain"); wp.bindValue(":diff", "intermediate");
+        wp.bindValue(":weeks", 8); wp.bindValue(":desc", "Programma di forza per livello intermedio.");
+        wp.exec();
+
+        wp.bindValue(":tid", 2); wp.bindValue(":title", "Advanced HIIT");
+        wp.bindValue(":goal", "endurance"); wp.bindValue(":diff", "advanced");
+        wp.bindValue(":weeks", 6); wp.bindValue(":desc", "Allenamento ad alta intensità per avanzati.");
+        wp.exec();
+
+        qDebug() << "Workout programs seeded.";
+    }
+
+    check.exec("SELECT COUNT(*) FROM nutrition_plans");
+    check.next();
+    if (check.value(0).toInt() == 0) {
+        QSqlQuery np;
+        np.prepare("INSERT INTO nutrition_plans (nutritionist_id, title, description) "
+                   "VALUES (:nid, :title, :desc)");
+
+        np.bindValue(":nid", 3); np.bindValue(":title", "Piano Dimagrante");
+        np.bindValue(":desc", "Piano alimentare per perdita di peso graduale.");
+        np.exec();
+
+        np.bindValue(":nid", 3); np.bindValue(":title", "Piano Massa Muscolare");
+        np.bindValue(":desc", "Piano ad alto contenuto proteico per aumentare la massa.");
+        np.exec();
+
+        qDebug() << "Nutrition plans seeded.";
+    }
+
+    check.exec("SELECT COUNT(*) FROM nutrition_tips");
+    check.next();
+    if (check.value(0).toInt() == 0) {
+        QSqlQuery nt;
+        nt.prepare("INSERT INTO nutrition_tips (plan_id, user_id, tip_date, content) "
+                   "VALUES (:pid, :uid, :date, :content)");
+
+        nt.bindValue(":pid", 1); nt.bindValue(":uid", 1);
+        nt.bindValue(":date", "2026-05-19");
+        nt.bindValue(":content", "Bevi almeno 2 litri d'acqua oggi.");
+        nt.exec();
+
+        nt.bindValue(":pid", 1); nt.bindValue(":uid", 1);
+        nt.bindValue(":date", "2026-05-18");
+        nt.bindValue(":content", "Evita i carboidrati raffinati a cena.");
+        nt.exec();
+
+        qDebug() << "Nutrition tips seeded.";
+    }
+
+    // Exercises
+    auto insertEx = [&](const QString &name, const QString &desc, const QString &cat) {
+        QSqlQuery q;
+        q.prepare("SELECT COUNT(*) FROM exercises WHERE name = :name");
+        q.bindValue(":name", name); q.exec(); q.next();
+        if (q.value(0).toInt() == 0) {
+            QSqlQuery ins;
+            ins.prepare("INSERT INTO exercises (name, description, category) VALUES (:name, :desc, :cat)");
+            ins.bindValue(":name", name); ins.bindValue(":desc", desc); ins.bindValue(":cat", cat);
+            ins.exec();
+        }
+    };
+
     insertEx("Panca Piana Bilanciere", "Classico esercizio per il petto su panca piana.", "Chest");
     insertEx("Panca Inclinata Manubri", "Esercizio per la parte superiore del petto.", "Chest");
     insertEx("Croci ai Cavi", "Isolamento per i pettorali ai cavi alti.", "Chest");
     insertEx("Push-up (Flessioni)", "Esercizio a corpo libero per petto e tricipiti.", "Chest");
     insertEx("Dips alle Parallele", "Esercizio per petto basso e tricipiti.", "Chest");
-
     insertEx("Trazioni alla Sbarra", "Esercizio fondamentale per la larghezza del dorso.", "Back");
     insertEx("Lat Machine", "Variante alla macchina delle trazioni.", "Back");
     insertEx("Rematore con Bilanciere", "Esercizio per lo spessore del dorso.", "Back");
     insertEx("Pulley Basso", "Rematore al cavo basso.", "Back");
     insertEx("Iperestensioni", "Isolamento per i lombari.", "Back");
-
     insertEx("Squat Bilanciere", "Re degli esercizi per le gambe.", "Legs");
     insertEx("Leg Press", "Esercizio alla macchina per cosce e glutei.", "Legs");
     insertEx("Leg Extension", "Isolamento per i quadricipiti.", "Legs");
     insertEx("Leg Curl", "Isolamento per i bicipiti femorali.", "Legs");
     insertEx("Affondi con Manubri", "Esercizio dinamico per gambe e glutei.", "Legs");
     insertEx("Calf Raise", "Esercizio per i polpacci.", "Legs");
-
     insertEx("Military Press", "Spinte sopra la testa con bilanciere.", "Shoulders");
     insertEx("Alzate Laterali", "Isolamento per il deltoide laterale.", "Shoulders");
     insertEx("Alzate Posteriori", "Isolamento per il deltoide posteriore.", "Shoulders");
     insertEx("Face Pull", "Esercizio ai cavi per la salute delle spalle.", "Shoulders");
-
     insertEx("Curl Bilanciere", "Classico per i bicipiti.", "Arms");
     insertEx("Curl a Martello", "Esercizio per bicipiti e brachioradiale.", "Arms");
     insertEx("Pushdown Tricipiti", "Estensioni ai cavi per i tricipiti.", "Arms");
     insertEx("French Press", "Spinte su panca per i tricipiti.", "Arms");
-
     insertEx("Plank", "Tenuta isometrica per il core.", "Abs");
     insertEx("Crunch Addominale", "Classico esercizio per il retto addominale.", "Abs");
     insertEx("Leg Raise", "Sollevamento gambe per addominali bassi.", "Abs");
     insertEx("Russian Twist", "Esercizio per gli obliqui.", "Abs");
-
     insertEx("Stacco da Terra", "Esercizio fondamentale per tutta la catena posteriore.", "Back/Legs");
     insertEx("Burpees", "Esercizio cardio full-body.", "Cardio");
 
-    qDebug() << "Exercises list refreshed.";
+    qDebug() << "Exercises seeded.";
 }
 
 bool DbManager::addWorkoutProgram(const QString &title, const QString &goal,
@@ -688,6 +762,27 @@ bool DbManager::updateWorkoutProgram(int programId, const QString &title, const 
     return false;
 }
 
+QVariantList DbManager::getNutritionTipsByPlan(int planId, int userId) {
+    QVariantList result;
+    QSqlQuery query;
+    query.prepare("SELECT t.tip_id, t.tip_date, t.content, n.title "
+                  "FROM nutrition_tips t JOIN nutrition_plans n ON t.plan_id = n.plan_id "
+                  "WHERE t.plan_id = :pid AND t.user_id = :uid "
+                  "ORDER BY t.tip_date DESC");
+    query.bindValue(":pid", planId);
+    query.bindValue(":uid", userId);
+    query.exec();
+    while (query.next()) {
+        QVariantMap tip;
+        tip["tip_id"] = query.value("tip_id");
+        tip["date"] = query.value("tip_date");
+        tip["content"] = query.value("content");
+        tip["plan"] = query.value("title");
+        result.append(tip);
+    }
+    return result;
+}
+
 QVariantList DbManager::getAllExercises() {
     QVariantList result;
     QSqlQuery query("SELECT exercise_id, name, description, category FROM exercises ORDER BY category, name");
@@ -762,13 +857,19 @@ bool DbManager::addNutritionPlan(const QString &title, const QString &descriptio
 }
 
 bool DbManager::deleteNutritionPlan(int planId) {
-    QSqlQuery query;
-    query.prepare("DELETE FROM nutrition_plans WHERE plan_id = :pid");
-    query.bindValue(":pid", planId);
-    if (query.exec()) {
+    QSqlDatabase::database().transaction();
+
+    QSqlQuery q;
+    q.prepare("DELETE FROM feedback WHERE plan_id = :pid"); q.bindValue(":pid", planId); q.exec();
+    q.prepare("DELETE FROM nutrition_tips WHERE plan_id = :pid"); q.bindValue(":pid", planId); q.exec();
+    q.prepare("DELETE FROM nutrition_plans WHERE plan_id = :pid"); q.bindValue(":pid", planId);
+
+    if (q.exec()) {
+        QSqlDatabase::database().commit();
         logDbChange("DELETE", "nutrition_plans", "plan_id: " + QString::number(planId));
         return true;
     }
+    QSqlDatabase::database().rollback();
     return false;
 }
 
@@ -848,14 +949,22 @@ QVariantList DbManager::getFeedbackByUser(int userId) {
 }
 
 QString DbManager::generateRegistrationCode(const QString &role) {
-    QString code = QString::number(QRandomGenerator::global()->bounded(100000, 999999));
-    QSqlQuery query;
-    query.prepare("INSERT INTO registration_codes (code, role) VALUES (:code, :role)");
-    query.bindValue(":code", code);
-    query.bindValue(":role", role);
-    if (query.exec()) {
-        logDbChange("INSERT", "registration_codes", "role: " + role + " | code: " + code);
-        return code;
+    for (int attempt = 0; attempt < 10; ++attempt) {
+        QString code = QString::number(QRandomGenerator::global()->bounded(100000, 999999));
+        QSqlQuery check;
+        check.prepare("SELECT COUNT(*) FROM registration_codes WHERE code = :code");
+        check.bindValue(":code", code);
+        check.exec(); check.next();
+        if (check.value(0).toInt() > 0) continue;
+
+        QSqlQuery query;
+        query.prepare("INSERT INTO registration_codes (code, role) VALUES (:code, :role)");
+        query.bindValue(":code", code);
+        query.bindValue(":role", role);
+        if (query.exec()) {
+            logDbChange("INSERT", "registration_codes", "role: " + role + " | code: " + code);
+            return code;
+        }
     }
     return "";
 }

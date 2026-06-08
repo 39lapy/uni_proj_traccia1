@@ -54,12 +54,26 @@ Page {
                         text: "Registra (Dettagliato)"
                         onClicked: {
                             var prog = db.getWorkoutPrograms()[programPicker.currentIndex]
-                            stackView.push(sessionDetailPage, { 
-                                isLogging: true, 
-                                program: prog,
-                                exercises: db.getProgramExercises(prog.program_id)
-                            })
+                            var exs = db.getProgramExercises(prog.program_id)
+                            if (exs.length === 0) {
+                                noExercisesMsg.visible = true
+                            } else {
+                                noExercisesMsg.visible = false
+                                stackView.push(sessionDetailPage, {
+                                    isLogging: true,
+                                    program: prog,
+                                    exercises: exs
+                                })
+                            }
                         }
+                    }
+
+                    Text {
+                        id: noExercisesMsg
+                        text: "Questo programma non ha esercizi assegnati."
+                        color: "red"
+                        visible: false
+                        font.pixelSize: 12
                     }
                 }
             }

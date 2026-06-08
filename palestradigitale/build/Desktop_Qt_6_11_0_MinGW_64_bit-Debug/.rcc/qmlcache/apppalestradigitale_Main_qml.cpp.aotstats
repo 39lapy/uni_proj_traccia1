@@ -27,15 +27,15 @@
                             "durationMicroseconds": 0,
                             "functionName": "onLoginSuccess",
                             "line": 20,
-                            "message": "Cannot access value for name stack"
+                            "message": "Could not find signal \"loginSuccess\"."
                         },
                         {
-                            "codegenResult": 0,
+                            "codegenResult": 2,
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "onLoginSuccess",
                             "line": 20,
-                            "message": ""
+                            "message": "Could not find signal \"loginSuccess\"."
                         },
                         {
                             "codegenResult": 2,
@@ -43,7 +43,7 @@
                             "durationMicroseconds": 0,
                             "functionName": "onGoToRegister",
                             "line": 27,
-                            "message": "Cannot access value for name stack"
+                            "message": "Could not find signal \"goToRegister\"."
                         },
                         {
                             "codegenResult": 2,

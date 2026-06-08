@@ -68,20 +68,20 @@ include CMakeFiles/apppalestradigitale_qmllint_module.dir/progress.make
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Qt/6.11.0/mingw_64/bin/qmllint.exe
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/Main.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/LoginPage.qml
+CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/RegisterPage.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ClientDashboard.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/AdminDashboard.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramsPage.qml
-CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml
-CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/WorkoutProgramDetailPage.qml
+CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/SessionsPage.qml
+CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/SessionDetailPage.qml
+CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPage.qml
+CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPlanDetailPage.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ManageUsersPage.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ManageWorkoutProgramsPage.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ManageNutritionPlansPage.qml
-CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/UserProgressPage.qml
-CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/RegisterPage.qml
-CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/NutritionPlanDetailPage.qml
 CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/ManageCodesPage.qml
-CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/SessionDetailPage.qml
+CMakeFiles/apppalestradigitale_qmllint_module: C:/Users/lapax/Documents/REPO\ UNI/uni_proj_traccia1/palestradigitale/qml/UserProgressPage.qml
 CMakeFiles/apppalestradigitale_qmllint_module: .rcc/qmllint/apppalestradigitale_module.rsp
 	cd /d C:\Users\lapax\DOCUME~1\REPOUN~1\UNI_PR~1\PALEST~1 && call "C:\Users\lapax\Documents\REPO UNI\uni_proj_traccia1\palestradigitale\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat" C:/Qt/6.11.0/mingw_64/bin/qmllint.exe "@C:/Users/lapax/Documents/REPO UNI/uni_proj_traccia1/palestradigitale/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.rcc/qmllint/apppalestradigitale_module.rsp"
 

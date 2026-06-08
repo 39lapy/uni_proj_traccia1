@@ -35,3 +35,17 @@
 [2026-06-03 11:02:58] LOGIN -> users | email: porcacciodeddio@test.com | type: trainer
 [2026-06-03 11:05:34] LOGOUT -> users | user_id: 4
 [2026-06-03 11:05:39] SHUTDOWN -> database | connection closed
+[2026-06-03 19:37:56] INIT -> database | connection opened
+[2026-06-03 19:38:16] LOGIN -> users | email: admin | type: administrator
+[2026-06-03 19:38:42] LOGOUT -> users | user_id: 3
+[2026-06-03 19:38:50] LOGIN -> users | email: mario@test.com | type: client
+[2026-06-03 19:39:09] INSERT -> feedback | user_id: 1 | rating: 2
+[2026-06-03 19:39:23] LOGOUT -> users | user_id: 1
+[2026-06-03 19:39:38] LOGIN -> users | email: porcacciodeddio@test.com | type: trainer
+[2026-06-03 19:40:35] INSERT -> workout_programs | title: caccaculo with 1 exercises
+[2026-06-03 19:40:39] LOGOUT -> users | user_id: 4
+[2026-06-03 19:40:48] LOGIN -> users | email: mario@test.com | type: client
+[2026-06-03 19:41:29] LOGOUT -> users | user_id: 1
+[2026-06-03 19:41:37] SHUTDOWN -> database | connection closed
+[2026-06-08 09:07:47] INIT -> database | connection opened
+[2026-06-08 09:07:51] SHUTDOWN -> database | connection closed

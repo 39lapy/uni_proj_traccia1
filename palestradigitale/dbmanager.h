@@ -9,12 +9,17 @@
 
 class DbManager : public QObject {
     Q_OBJECT
+private:
+    QString hashPassword(const QString &password);
 public:
     explicit DbManager(QObject *parent = nullptr);
 
     bool init();
     void seedTestData();
     void closeLog();
+
+
+    Q_INVOKABLE QVariantList getNutritionTipsByPlan(int planId, int userId);
 
     Q_INVOKABLE bool login(const QString &email, const QString &password);
     Q_INVOKABLE bool registerUser(const QString &firstName, const QString &lastName,

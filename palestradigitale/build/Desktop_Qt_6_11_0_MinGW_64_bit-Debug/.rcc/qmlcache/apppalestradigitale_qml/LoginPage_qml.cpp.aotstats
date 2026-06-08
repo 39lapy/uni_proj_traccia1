@@ -74,7 +74,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 56,
+                            "line": 57,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -82,7 +82,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 58,
+                            "line": 59,
                             "message": "Could not find signal \"clicked\"."
                         }
                     ],
