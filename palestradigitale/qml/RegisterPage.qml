@@ -144,6 +144,14 @@ Page {
                         return
                     }
 
+                    if (userTypePicker.currentIndex > 0) {
+                        if (otpField.text === "" || !db.validateRegistrationCode(otpField.text, userTypePicker.currentText)) {
+                            errorText.text = "Codice non valido o già utilizzato"
+                            errorText.visible = true
+                            return
+                        }
+                    }
+
                     var ok = db.registerUser(
                         firstNameField.text,
                         lastNameField.text,

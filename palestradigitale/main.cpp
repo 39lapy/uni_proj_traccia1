@@ -15,9 +15,6 @@ int main(int argc, char *argv[])
 
     dbManager.seedTestData();
 
-    QVariantList programs = dbManager.getWorkoutPrograms();
-    qDebug() << "Programs count:" << programs.count();
-
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextProperty("db", &dbManager);
 

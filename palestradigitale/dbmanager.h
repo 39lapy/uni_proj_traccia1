@@ -36,7 +36,6 @@ public:
     Q_INVOKABLE QVariantList getWorkoutProgramsByGoal(const QString &goal);
 
     Q_INVOKABLE QVariantList getSessions(int userId);
-    Q_INVOKABLE bool logSession(int userId, int programId, const QString &dateTime, int durationMinutes);
     Q_INVOKABLE bool logDetailedSession(int userId, int programId, const QString &dateTime, int durationMinutes, const QVariantList &results);
 
     Q_INVOKABLE QVariantList getNutritionPlans();

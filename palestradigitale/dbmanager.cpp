@@ -293,23 +293,6 @@ QVariantList DbManager::getSessions(int userId) {
     return result;
 }
 
-bool DbManager::logSession(int userId, int programId, const QString &dateTime, int durationMinutes) {
-    QSqlQuery query;
-    query.prepare("INSERT INTO sessions (user_id, program_id, session_datetime, duration_minutes, completed) "
-                  "VALUES (:uid, :pid, :dt, :dur, 1)");
-    query.bindValue(":uid", userId);
-    query.bindValue(":pid", programId);
-    query.bindValue(":dt", dateTime);
-    query.bindValue(":dur", durationMinutes);
-    if (query.exec()) {
-        logDbChange("INSERT", "sessions", "user_id: " + QString::number(userId) +
-                                              " | program_id: " + QString::number(programId) +
-                                              " | duration: " + QString::number(durationMinutes));
-        return true;
-    }
-    return false;
-}
-
 bool DbManager::logDetailedSession(int userId, int programId, const QString &dateTime, int durationMinutes, const QVariantList &results) {
     if (!QSqlDatabase::database().transaction()) return false;
 
@@ -520,23 +503,24 @@ void DbManager::seedTestData() {
                       "VALUES (:first, :last, :email, :pass, :type)");
 
         query.bindValue(":first", "Mario"); query.bindValue(":last", "Rossi");
-        query.bindValue(":email", "mario@test.com"); query.bindValue(":pass", "1234");
+        query.bindValue(":email", "mario@test.com");
+        query.bindValue(":pass", hashPassword("1234"));
         query.bindValue(":type", "client"); query.exec();
 
         query.bindValue(":first", "Luigi"); query.bindValue(":last", "Verdi");
-        query.bindValue(":email", "luigi@test.com"); query.bindValue(":pass", "1234");
+        query.bindValue(":email", "luigi@test.com");
+        query.bindValue(":pass", hashPassword("1234"));
         query.bindValue(":type", "trainer"); query.exec();
 
         query.bindValue(":first", "Anna"); query.bindValue(":last", "Bianchi");
-        query.bindValue(":email", "anna@test.com"); query.bindValue(":pass", "1234");
+        query.bindValue(":email", "anna@test.com");
+        query.bindValue(":pass", hashPassword("1234"));
         query.bindValue(":type", "nutritionist"); query.exec();
 
         query.bindValue(":first", "Admin"); query.bindValue(":last", "Istrator");
-        query.bindValue(":email", "admin"); query.bindValue(":pass", "admin");
+        query.bindValue(":email", "admin");
+        query.bindValue(":pass", hashPassword("admin"));
         query.bindValue(":type", "administrator"); query.exec();
-
-        query.bindValue(":pass", hashPassword("1234"));   // for test users
-        query.bindValue(":pass", hashPassword("admin"));   // for admin
 
         qDebug() << "Users seeded.";
     }
