@@ -1,7 +1,7 @@
 # Palestra Digitale — Documentazione
 
 > Progetto universitario — Qt6 Quick / SQLite  
-> Autori: Gabriele + teammate  
+> Autori: Gabriele Lapalombella + Angelo Mottola  
 > Versione: 1.0
 
 ---
