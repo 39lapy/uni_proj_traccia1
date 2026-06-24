@@ -19,6 +19,7 @@
    - [8. Sicurezza](#8-sicurezza)
    - [9. Logging](#9-logging)
    - [10. Dati di test](#10-dati-di-test)
+   - [11. Testing](#11-testing)
 2. [Manuale Utente](#manuale-utente)
    - [1. Avvio dell'applicazione](#1-avvio-dellapplicazione)
    - [2. Registrazione](#2-registrazione)
