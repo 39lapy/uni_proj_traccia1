@@ -2,7 +2,7 @@
 
 > Progetto universitario — Qt6 Quick / SQLite  
 > Autori: Gabriele Lapalombella + Angelo Mottola  
-> Versione: 1.0
+> Versione: 1.1
 
 ---
 
