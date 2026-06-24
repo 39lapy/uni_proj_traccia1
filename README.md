@@ -534,6 +534,289 @@ Vengono anche inseriti 3 programmi di allenamento, 2 piani nutrizionali, 2 consi
 
 ---
 
+## 11. Testing
+ 
+Il progetto non utilizza un framework di test automatizzato dedicato (es. Qt Test), ma adotta una strategia di **test manuale strutturato** basata sugli account di seed (`seedTestData()`) e sul sistema di logging su file. Di seguito sono documentati i casi di test ritenuti più rilevanti, organizzati per area funzionale.
+ 
+---
+ 
+### 11.1 Ambiente di test
+ 
+| Parametro | Valore |
+|---|---|
+| Sistema operativo | Windows 11 / Ubuntu 24.04 |
+| Qt | 6.10+ |
+| Compiler | MinGW 64-bit (Windows) / GCC (Linux) |
+| Database | `palestradigitale.db` — SQLite locale |
+| Account seed | Vedi tabella §10 |
+| Log | `palestradigitale.log` (nella cartella di esecuzione) |
+ 
+Per ogni test, il log di esecuzione (`palestradigitale.log`) costituisce la traccia persistente dell'esito. Prima di ogni sessione di test si raccomanda di eliminare il file `.db` e ripartire da un database fresco, oppure di usare un `.db` di backup separato.
+ 
+---
+ 
+### 11.2 Test di autenticazione
+ 
+#### TC-AUTH-01 — Login con credenziali valide (client)
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Database seedato, utente `mario@test.com` presente |
+| **Input** | email: `mario@test.com`, password: `1234` |
+| **Azione** | Compilare i campi e premere "Login" |
+| **Risultato atteso** | Redirect a `ClientDashboard`; `db.currentUserType()` restituisce `"client"` |
+| **Verifica log** | Nessuna entry INSERT (login non scrive sul DB), nessun errore in console |
+ 
+#### TC-AUTH-02 — Login con password errata
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Database seedato |
+| **Input** | email: `mario@test.com`, password: `sbagliata` |
+| **Azione** | Compilare i campi e premere "Login" |
+| **Risultato atteso** | Messaggio di errore visibile in UI; nessun redirect |
+| **Verifica log** | Nessuna entry; `login()` restituisce `false` |
+ 
+#### TC-AUTH-03 — Registrazione nuovo client
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Email non già presente nel database |
+| **Input** | Nome: `Test`, Cognome: `User`, email: `test@user.com`, password: `12345678`, conferma: `12345678`, ruolo: `client` |
+| **Azione** | Compilare il form di registrazione e premere "Registrati" |
+| **Risultato atteso** | Utente inserito nel DB; ritorno al login senza errori |
+| **Verifica log** | Entry `INSERT -> users | email: test@user.com` presente nel log |
+ 
+#### TC-AUTH-04 — Registrazione trainer con codice OTP valido
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Effettuare login come `admin`/`admin`; generare un codice OTP per `trainer` dalla sezione "Codici Registrazione"; annotare il codice generato |
+| **Input** | Ruolo: `trainer`, OTP: codice annotato |
+| **Azione** | Effettuare logout; registrarsi con il codice OTP |
+| **Risultato atteso** | Registrazione completata; il codice risulta `used = 1` nella tabella `registration_codes` |
+| **Verifica log** | Entry `INSERT -> users` + entry `UPDATE -> registration_codes` |
+ 
+#### TC-AUTH-05 — Registrazione trainer con codice OTP già usato
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | TC-AUTH-04 completato; stesso codice OTP già consumato |
+| **Input** | Stesso codice OTP del test precedente |
+| **Risultato atteso** | Messaggio di errore "Codice non valido"; registrazione bloccata |
+ 
+#### TC-AUTH-06 — Logout
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Utente autenticato |
+| **Azione** | Premere "Logout" |
+| **Risultato atteso** | Redirect a `LoginPage`; `db.currentUserId()` restituisce `-1` |
+| **Verifica log** | Entry `LOGOUT -> users | user_id: X` |
+ 
+---
+ 
+### 11.3 Test programmi di allenamento
+ 
+#### TC-WK-01 — Visualizzazione lista programmi (client)
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Login come `mario@test.com` |
+| **Azione** | Navigare su "Programmi di Allenamento" |
+| **Risultato atteso** | Lista popolata con i 3 programmi di seed; filtri "Difficoltà" e "Obiettivo" funzionanti |
+ 
+#### TC-WK-02 — Filtro per difficoltà
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | TC-WK-01 superato |
+| **Input** | Selezionare `beginner` dal filtro difficoltà |
+| **Risultato atteso** | Lista ristretta ai soli programmi con `difficulty = 'beginner'` |
+ 
+#### TC-WK-03 — Apertura dettaglio programma e visualizzazione esercizi
+ 
+| Campo | Valore |
+|---|---|
+| **Azione** | Toccare un programma nella lista |
+| **Risultato atteso** | `WorkoutProgramDetailPage` aperta; lista esercizi con nome, serie × reps e recupero corretti rispetto al DB |
+ 
+#### TC-WK-04 — Logging sessione dettagliata
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Programma con almeno un esercizio; login come client |
+| **Azione** | Dal dettaglio programma, premere "🚀 Inizia Allenamento"; compilare peso e reps per ogni serie; premere "💾 Salva Allenamento" |
+| **Risultato atteso** | Entry in `sessions` + entry in `session_results` per ogni serie; sessione visibile in "Le mie Sessioni" |
+| **Verifica log** | Entry `INSERT -> sessions` + `INSERT -> session_results` |
+ 
+#### TC-WK-05 — Logging sessione su programma senza esercizi
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Creare un programma vuoto (senza esercizi) come admin/trainer |
+| **Azione** | Tentare di avviare l'allenamento su quel programma come client |
+| **Risultato atteso** | Messaggio "Il programma non ha esercizi assegnati" oppure pulsante non disponibile; nessuna entry in DB |
+ 
+#### TC-WK-06 — Creazione programma con esercizi (trainer/admin)
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Login come `luigi@test.com` (trainer) o `admin` |
+| **Input** | Titolo: `Programma Test`, obiettivo: `weight loss`, difficoltà: `intermediate`, durata: `4`, almeno 1 esercizio dal catalogo |
+| **Azione** | Compilare il form e premere "Crea Programma" |
+| **Risultato atteso** | Programma visibile nella lista; esercizi presenti nel dettaglio |
+| **Verifica log** | Entry `INSERT -> workout_programs` + `INSERT -> program_exercises` (transazione atomica) |
+ 
+#### TC-WK-07 — Eliminazione programma
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Login come admin/trainer; programma esistente |
+| **Azione** | Premere il pulsante di eliminazione su un programma |
+| **Risultato atteso** | Programma rimosso dalla lista; record rimosso da `workout_programs` e `program_exercises` (cascade) |
+ 
+---
+ 
+### 11.4 Test nutrizione
+ 
+#### TC-NUT-01 — Visualizzazione piani nutrizionali (client)
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Login come `mario@test.com`; piani di seed presenti |
+| **Azione** | Navigare su "Nutrizione" |
+| **Risultato atteso** | Lista piani nutrizionali visibile; sezione "Consigli Giornalieri" con i 2 consigli di seed per Mario |
+ 
+#### TC-NUT-02 — Consigli filtrati per piano
+ 
+| Campo | Valore |
+|---|---|
+| **Azione** | Toccare un piano nutrizionale; aprire `NutritionPlanDetailPage` |
+| **Risultato atteso** | Solo i consigli associati a quel piano e all'utente corrente sono visibili |
+ 
+#### TC-NUT-03 — Aggiunta consiglio nutrizionale (nutrizionista/admin)
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Login come `anna@test.com` (nutritionist) |
+| **Input** | Piano: (selezionare dalla lista), Cliente: `Mario`, data: oggi, contenuto: `Aumentare l'apporto proteico` |
+| **Azione** | Premere "Aggiungi Consiglio" |
+| **Risultato atteso** | Consiglio visibile per Mario in "Consigli Giornalieri" |
+| **Verifica log** | Entry `INSERT -> nutrition_tips` |
+ 
+---
+ 
+### 11.5 Test feedback
+ 
+#### TC-FB-01 — Rilascio feedback su programma
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Login come client; programma visibile |
+| **Input** | Rating: 4 stelle, commento: `Ottimo programma` |
+| **Azione** | Compilare il form feedback nel dettaglio programma e inviare |
+| **Risultato atteso** | Feedback salvato in `feedback`; record visibile in "Progressi Utenti" dall'admin |
+| **Verifica log** | Entry `INSERT -> feedback | user_id: X | rating: 4` |
+ 
+#### TC-FB-02 — Feedback con solo rating (commento opzionale)
+ 
+| Campo | Valore |
+|---|---|
+| **Input** | Rating: 5 stelle, commento: (vuoto) |
+| **Risultato atteso** | Feedback salvato correttamente con `comment = NULL` o stringa vuota |
+ 
+---
+ 
+### 11.6 Test gestione utenti (admin)
+ 
+#### TC-ADM-01 — Visualizzazione lista utenti
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Login come `admin`/`admin` |
+| **Azione** | Navigare su "👥 Gestione Utenti" > Tab "Utenti" |
+| **Risultato atteso** | Lista di tutti gli utenti registrati |
+ 
+#### TC-ADM-02 — Assegnazione trainer a cliente
+ 
+| Campo | Valore |
+|---|---|
+| **Input** | Trainer: `Luigi`, Cliente: `Mario`, data inizio: oggi |
+| **Azione** | Selezionare e premere "Assegna" |
+| **Risultato atteso** | Record inserito in `assignments`; assegnazione visibile nel Tab "Assegnazioni" |
+| **Verifica log** | Entry `INSERT -> assignments` |
+ 
+#### TC-ADM-03 — Eliminazione utente con cascade
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Utente con sessioni, feedback e assegnazioni collegate |
+| **Azione** | Premere eliminazione su un utente |
+| **Risultato atteso** | Utente e tutti i record dipendenti eliminati in modo atomico; nessun record orfano in `sessions`, `feedback`, `assignments` |
+| **Verifica log** | Entry `DELETE -> users | user_id: X` con conferma transazione |
+ 
+---
+ 
+### 11.7 Test progressi utenti
+ 
+#### TC-PRG-01 — Statistiche cliente
+ 
+| Campo | Valore |
+|---|---|
+| **Pre-condizione** | Login come admin; `mario@test.com` ha almeno 1 sessione completata e 1 feedback |
+| **Azione** | Navigare su "📊 Progressi Utenti"; selezionare `Mario`; premere "Carica" |
+| **Risultato atteso** | Tab "Statistiche" mostra valori coerenti con i record presenti nel DB (sessioni totali, completate, minuti, media feedback ≥ 1) |
+ 
+---
+ 
+### 11.8 Test di integrità e casi limite
+ 
+#### TC-INT-01 — Transazione atomica su sessione (rollback simulato)
+ 
+| Campo | Valore |
+|---|---|
+| **Descrizione** | Verificare che `logDetailedSession()` non lasci dati parziali in caso di errore durante il salvataggio dei `session_results` |
+| **Metodo** | Inserire manualmente un `program_exercise_id` inesistente e osservare che né la sessione né i risultati parziali vengono persistiti |
+| **Risultato atteso** | Nessun record in `sessions` né in `session_results`; log mostra `ROLLBACK` |
+ 
+#### TC-INT-02 — Email duplicata in registrazione
+ 
+| Campo | Valore |
+|---|---|
+| **Input** | Tentare di registrare `mario@test.com` una seconda volta |
+| **Risultato atteso** | `registerUser()` restituisce `false`; messaggio di errore in UI; nessun inserimento duplicato |
+ 
+#### TC-INT-03 — Foreign key enforcement
+ 
+| Campo | Valore |
+|---|---|
+| **Descrizione** | SQLite ha `PRAGMA foreign_keys = ON`; tentare di inserire una sessione con `program_id` inesistente |
+| **Risultato atteso** | Query fallisce con errore di vincolo; log mostra l'errore; nessun record corrotto |
+ 
+#### TC-INT-04 — Feedback con `program_id` e `plan_id` entrambi NULL
+ 
+| Campo | Valore |
+|---|---|
+| **Descrizione** | `addFeedback()` accetta `-1` per entrambi; verificare che non venga generato un record logicamente inconsistente |
+| **Risultato atteso** | Record inserito con entrambi i campi NULL; visible nei progressi dell'utente |
+ 
+---
+ 
+### 11.9 Copertura funzionale — riepilogo
+ 
+| Area | Test case | Esito atteso |
+|---|---|---|
+| Autenticazione | TC-AUTH-01…06 | Login, registrazione, OTP, logout |
+| Programmi | TC-WK-01…07 | CRUD, filtri, logging sessione |
+| Nutrizione | TC-NUT-01…03 | Visualizzazione, consigli |
+| Feedback | TC-FB-01…02 | Inserimento con e senza commento |
+| Gestione utenti | TC-ADM-01…03 | Lista, assegnazione, cascade delete |
+| Progressi | TC-PRG-01 | Statistiche aggregate |
+| Integrità | TC-INT-01…04 | Transazioni, FK, duplicati |
+ 
+> **Nota:** tutti i test manuali sopra descritti sono stati eseguiti su un database fresco (generato da `seedTestData()`)
+
 # Manuale Utente
 
 ## 1. Avvio dell'applicazione
